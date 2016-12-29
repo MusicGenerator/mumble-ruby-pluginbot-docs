@@ -52,4 +52,4 @@ This documentation is written in ReStructuredText.
 Contribute to this documentation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can contribute to this documentation on Github, see https://github.com/dafoxia/mumble-ruby-pluginbot-docs.
+You can contribute to this documentation on Github, see https://github.com/MusicGenerator/mumble-ruby-pluginbot-docs.
