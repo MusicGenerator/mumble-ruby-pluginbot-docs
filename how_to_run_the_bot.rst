@@ -1,3 +1,5 @@
+.. howtorunthebot-label:
+
 How to run the bot
 ==================
 

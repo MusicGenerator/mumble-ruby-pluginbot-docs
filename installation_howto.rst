@@ -9,32 +9,26 @@ In this tutorial/howto we install the :ref:`start-label` into a users home direc
 
   This tutorial covers the installation of the new :ref:`start-label` from version 0.10.0 or higher.
 
-  If you want to install the old and unsupported legacy version (<= 0.9.1.x), please use https://wiki.natenom.com/w/Installation_of_mumble-ruby-pluginbot_LEGACY.
+  If you want to install the old and unsupported legacy version (<= 0.9.1.x), `please use this howto`__.
+
+__ https://wiki.natenom.com/w/Installation_of_mumble-ruby-pluginbot_LEGACY
 
 .. seealso::
 
-  See also :ref:`compatibility-label`.
+  - :ref:`compatibility-label`
+  - :ref:`howtorunthebot-label`
 
-{{Mumble-Ruby-Pluginbot-Systemimages}}
-
-.. note::
-
-  If you don't want to install the bot yourself as described in the next section you can instead download and run a fully set up VirtualBox appliance with one instance of the Mumble-Ruby-Pluginbot.
-
-  See :ref:`virtualboxappliance-label`.
-
-.. note::
-
-  There is also a Dockerfile available to run the bot, see https://github.com/Natenom/mumble-ruby-pluginbot-docker/.
-
-How much time do you need?
+How much time will you need?
 --------------------------
 
 This tutorial works well using copy and paste if you want one bot only. If you want more bots, read the note boxes and warning boxes :)
 
 After ~20 minutes it should be finished, depending on your servers internet connection.
 
-This will be the directory structure when the tutorial is completed::
+How will it look like?
+----------------------
+
+This will be the directory structure when this howto is completed::
 
   /home/botmaster/
   ├── mpd1
