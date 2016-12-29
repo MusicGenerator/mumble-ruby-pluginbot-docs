@@ -5,14 +5,6 @@ Installation HowTo
 
 In this tutorial/howto we install the :ref:`start-label` into a users home directory. No system services are used.
 
-.. note::
-
-  This tutorial covers the installation of the new :ref:`start-label` from version 0.10.0 or higher.
-
-  If you want to install the old and unsupported legacy version (<= 0.9.1.x), `please use this howto`__.
-
-__ https://wiki.natenom.com/w/Installation_of_mumble-ruby-pluginbot_LEGACY
-
 .. seealso::
 
   - :ref:`compatibility-label`

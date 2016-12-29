@@ -1,4 +1,4 @@
-.. howtorunthebot-label:
+.. _howtorunthebot-label:
 
 How to run the bot
 ==================
