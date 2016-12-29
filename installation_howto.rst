@@ -47,7 +47,7 @@ This will be the directory structure when this howto is completed::
   │   │   └── scripts
   │   │       └── mumblerubypluginbot.service
   │   │       └── overwrite_conf.rb
-  │   │       └── start.sh
+  │   │       └── manage.sh
   │   │       └── updater.sh
   │   │   └── [...]
   │   └── bot1_conf.rb
@@ -338,11 +338,11 @@ Change into the mumble-ruby-pluginbot directory::
 
   cd ~/src/mumble-ruby-pluginbot
 
-The Bash script named ''start.sh'' in the scripts directory is used to start all your bots and your MPD instance(s).
+The Bash script named ``manage.sh`` in the scripts directory is used to start all your bots and your MPD instance(s).
 
 Make it executable::
 
-  chmod u+x ~/src/mumble-ruby-pluginbot/scripts/start.sh
+  chmod u+x ~/src/mumble-ruby-pluginbot/scripts/manage.sh
 
 Also make the update script executable::
 
@@ -354,7 +354,7 @@ Also make the update script executable::
 
 You can see the script `here`__.
 
-__ https://github.com/dafoxia/mumble-ruby-pluginbot/blob/master/scripts/start.sh
+__ https://github.com/dafoxia/mumble-ruby-pluginbot/blob/master/scripts/manage.sh
 
 Without modification the scripts starts only bot 1, for every additional bot modify the script.
 
@@ -411,7 +411,7 @@ Finish it, run your bot(s)
 
 You almost finished; now you can run your bot(s)::
 
-  ~/src/mumble-ruby-pluginbot/scripts/start.sh
+  ~/src/mumble-ruby-pluginbot/scripts/manage.sh start
 
 When the bot(s) appear on your server, register it and start working with it. Try .help as a first command :)
 
@@ -445,7 +445,7 @@ Start everything automatically – if your system is NOT systemd
 
 Add the following lines to <code>/etc/rc.local</code> before the ''exit...'' line to start your bot(s) and mpd instance(s) when your system starts::
 
-  su - botmaster -c "/home/botmaster/src/mumble-ruby-pluginbot/scripts/start.sh" &
+  su - botmaster -c "/home/botmaster/src/mumble-ruby-pluginbot/scripts/manage.sh start" &
 
 The bot will start automatically on the next reboot.
 

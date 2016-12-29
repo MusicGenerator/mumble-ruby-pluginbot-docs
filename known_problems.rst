@@ -62,7 +62,7 @@ When you get something like this in your debug console::
   UnicodeEncodeError: 'ascii' codec can't encode character u'\u2605' in position 49: ordinal not in range(128)
   (END)
 
-Make sure that your system has an appropriate locale available and add the following line to the second line of your start.sh::
+Make sure that your system has an appropriate locale available and add the following line to the second line of your manage.sh::
 
   export LANG="en_US.UTF-8"
 
