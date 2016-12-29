@@ -24,6 +24,7 @@ Contents
    usage
    plugins
    how_to_run_the_bot
+   installation_howto
    known_problems
    status
    faq
