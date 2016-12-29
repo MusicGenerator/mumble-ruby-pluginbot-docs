@@ -7,11 +7,12 @@ Mumble-Ruby-Pluginbot is an extensible bot which can play audio, be fed by diffe
 
 `It is free and open source`__.
 
-__ https://github.com/dafoxia/mumble-ruby-pluginbot/blob/master/LICENSE
+__ https://github.com/MusicGenerator/mumble-ruby-pluginbot/blob/master/LICENSE
+
 
 You can find the source code on `GitHub`__.
 
-__ https://github.com/dafoxia/mumble-ruby-pluginbot.
+__ https://github.com/MusicGenerator/mumble-ruby-pluginbot.
 
 Contents
 --------

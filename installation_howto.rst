@@ -255,7 +255,7 @@ Do the following commands::
 
   cd ~/src
 
-  git clone https://github.com/dafoxia/mumble-ruby-pluginbot.git
+  git clone https://github.com/MusicGenerator/mumble-ruby-pluginbot.git
 
   cd mumble-ruby-pluginbot
 
@@ -327,7 +327,7 @@ Copy the configuration file for your local MPD::
 
       volume_normalization "yes"
 
-  .. _here: https://github.com/dafoxia/mumble-ruby-pluginbot/blob/master/templates/mpd.conf
+  .. _here: https://github.com/MusicGenerator/mumble-ruby-pluginbot/blob/master/templates/mpd.conf
   .. _volume normalization: https://en.wikipedia.org/wiki/Audio_normalization
 
 
@@ -354,7 +354,7 @@ Also make the update script executable::
 
 You can see the script `here`__.
 
-__ https://github.com/dafoxia/mumble-ruby-pluginbot/blob/master/scripts/manage.sh
+__ https://github.com/MusicGenerator/mumble-ruby-pluginbot/blob/master/scripts/manage.sh
 
 Without modification the scripts starts only bot 1, for every additional bot modify the script.
 

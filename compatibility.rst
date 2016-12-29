@@ -15,12 +15,11 @@ As of 2016-12-31 the stable release of Mumble-Ruby-Pluginbot was successfully in
 
 .. _Ubuntu based smallest DigitalOcean.com virtual server: https://blog.natenom.com/2016/11/mumble-ruby-pluginbots-on-the-smallest-digitalocean-virtual-server/
 
-
 .. note::
 
   If you installed the bot successfully on another platform or system please create an `issue on our project page`_ to inform us and we will update this information. Thank you.
 
-  .. _issue on our project page: https://github.com/dafoxia/mumble-ruby-pluginbot/issues
+  .. _issue on our project page: https://github.com/MusicGenerator/mumble-ruby-pluginbot/issues
 
   You can also write an email to `Natenom`_.
 

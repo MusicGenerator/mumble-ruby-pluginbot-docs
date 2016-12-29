@@ -7,7 +7,7 @@ Known problems
 
   Please check also the `issues on the project page`__.
 
-__ https://github.com/dafoxia/mumble-ruby-pluginbot/issues
+__ https://github.com/MusicGenerator/mumble-ruby-pluginbot/issues
 
 Bot starts and crashes and cannot connect to MPD
 ------------------------------------------------
