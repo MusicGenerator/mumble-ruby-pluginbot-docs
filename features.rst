@@ -17,7 +17,6 @@ For a complete list of features you must try the bot yourself. Write ``.help`` t
 
 .. seealso::
 
-  If you hesitate whether setting up the is worth it you may connect to `Natenoms Mumble-Server`_ in order to test one of the bots there.
+  If you hesitate whether setting up the Mumble-Ruby-Pluginbot is worth it you may connect to `Natenoms Mumble-Server`_ in order to test one of the bots there. Just ask someone for an admin and a temporary registration on the server.
 
   .. _Natenoms Mumble-Server: https://www.natenom.com/mymumbleserver/
-  
