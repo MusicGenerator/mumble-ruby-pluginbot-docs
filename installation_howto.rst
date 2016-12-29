@@ -203,7 +203,7 @@ Install [https://github.com/archSeer/ruby-mpd/ ruby-mpd] so that the bot can con
 Download and set up celt-ruby and libcelt
 -----------------------------------------
 
-For compatibility reasons the bot uses slightly modified versions of [[CELT]] which need to be built with the following steps::
+For compatibility reasons the bot uses slightly modified versions of CELT which need to be built with the following steps::
 
   cd ~/src
 
