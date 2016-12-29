@@ -27,27 +27,6 @@ For example::
 Plugin specific information
 ---------------------------
 
-Null
-^^^^
-
-This plugin does simply nothing :)
-
-Soundcloud
-^^^^^^^^^^
-This plugin can download music from Soundcloud.
-
-Usage::
-
-  .help soundcloud
-
-Radiostream
-^^^^^^^^^^^
-This plugin can search for radiostreams and play them.
-
-Usage::
-
-  .help radiostream
-
 Bandcamp
 ^^^^^^^^
 This plugin can download music from Bandcamp.
@@ -55,62 +34,6 @@ This plugin can download music from Bandcamp.
 Usage::
 
   .help bandcamp
-
-Idle
-^^^^
-This plugin is used so that the bot can go to his home channel after a specified idle time.
-
-Usage::
-
-  .help idle
-
-Mixcloud
-^^^^^^^^
-This plugin can download music from Mixcloud.
-
-Usage::
-
-  .help mixcloud
-
-Version
-^^^^^^^
-This plugin shows the bots version.
-
-Usage::
-
-  .help version
-
-Timer
-^^^^^
-This plugin can create user based timers.
-
-Usage::
-
-  .help timer
-
-Ektoplazm
-^^^^^^^^^
-This plugin can download music from Ektoplazm.
-
-Usage::
-
-  .help ektoplazm
-
-Mpd
-^^^
-This is the main plugin of the bot and has all the capabilities of the MPD running in the background.
-
-Usage::
-
-  .help mpd
-
-Youtube
-^^^^^^^
-This plugin can search on Youtube and download music from there.
-
-Usage::
-
-  .help youtube
 
 Control
 ^^^^^^^
@@ -120,6 +43,22 @@ Usage::
 
   .help control
 
+Ektoplazm
+^^^^^^^^^
+This plugin can download music from Ektoplazm.
+
+Usage::
+
+  .help ektoplazm
+
+Idle
+^^^^
+This plugin is used so that the bot can go to his home channel after a specified idle time.
+
+Usage::
+
+  .help idle
+
 Messages
 ^^^^^^^^
 This plugin enables you to get specific status messages from the bot.
@@ -127,3 +66,64 @@ This plugin enables you to get specific status messages from the bot.
 Usage::
 
   .help messages
+
+Mixcloud
+^^^^^^^^
+This plugin can download music from Mixcloud.
+
+Usage::
+
+  .help mixcloud
+
+Mpd
+^^^
+This is the main plugin of the bot and has all the capabilities of the MPD running in the background.
+
+Usage::
+
+  .help mpd
+
+Null
+^^^^
+
+This plugin does simply nothing :)
+
+Radiostream
+^^^^^^^^^^^
+This plugin can search for radiostreams and play them.
+
+Usage::
+
+  .help radiostream
+
+Soundcloud
+^^^^^^^^^^
+This plugin can download music from Soundcloud.
+
+Usage::
+
+  .help soundcloud
+
+Timer
+^^^^^
+This plugin can create user based timers.
+
+Usage::
+
+  .help timer
+
+Version
+^^^^^^^
+This plugin shows the bots version.
+
+Usage::
+
+  .help version
+
+Youtube
+^^^^^^^
+This plugin can search on Youtube and download music from there.
+
+Usage::
+
+  .help youtube
