@@ -9,10 +9,36 @@ Known problems
 
 __ https://github.com/MusicGenerator/mumble-ruby-pluginbot/issues
 
+General information
+-------------------
+Watch log files
+^^^^^^^^^^^^^^^
+
+.. note::
+
+  By default the bot does a very detailed logging into ~/logs/*.log. You may use any tool to view those logs.
+
+  If debug logging is disabled you can enable it via the configuration file (main -> debug -> true).
+
+
+You can also watch the log files with manage.sh::
+
+  ~/src/mumble-ruby-pluginbot/scripts/manage.sh log
+
+Press Ctrl + c to stop the log output.
+
+Running the bot without the manage.sh script
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Only for experts**: If you want to start the bot without the manage.sh script you must manually run the following commands after every login in order to use the correct bot environment::
+
+  source ~/.rvm/scripts/rvm
+
+  rvm use @bots
+
+Now you can try to start the bot...
+
 Bot starts and crashes and cannot connect to MPD
 ------------------------------------------------
-
-Please start the bot with the debug option and take a look at the log file.
 
 If the log contains the line::
 

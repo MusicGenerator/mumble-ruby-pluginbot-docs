@@ -415,27 +415,10 @@ You almost finished; now you can run your bot(s)::
 
 When the bot(s) appear on your server, register it and start working with it. Try .help as a first command :)
 
-To restart your bot(s) just rerun the script; first it kills all running mumble-ruby-pluginbots and mpd instances and then start them again.
 
-Now there should be a new bot on your Mumble server.
+.. seealso::
 
-.. note::
-
-  In order to get some debug output if something doesn't work as expected please enable the debug setting in the main config file.
-
-And then watch the log file in realtime with tail while sending commands to it::
-
-  tail -n1 -f ~/logs/bot1.log
-
-.. note::
-
-  **Only for experts**: Be aware that you need to load your Ruby environment manually after every login in order to use the locally installed ruby stuff WITHOUT using the start script. To do so, run the following two commands or add them to your mumble-ruby related scripts::
-
-    source ~/.rvm/scripts/rvm
-
-    rvm use @bots
-
-    You do NOT need to do this if you only use the start scripts in this tutorial.
+  If the bot does not connect refer to :ref:`knownproblems-label`.
 
 Start everything automatically
 ------------------------------
@@ -449,7 +432,7 @@ Add the following lines to <code>/etc/rc.local</code> before the ''exit...'' lin
 
 The bot will start automatically on the next reboot.
 
-Start everything automatically – if your system IS systemd
+Start everything automatically – if your system is systemd
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Run the following command as root::
@@ -459,6 +442,21 @@ Run the following command as root::
   systemctl enable mumblerubypluginbot
 
 The bot will start automatically on the next reboot.
+
+Controlling the bot(s)
+----------------------
+
+To restart your bot(s) run::
+
+  ~/src/mumble-ruby-pluginbot/scripts/manage.sh restart
+
+To stop your bot(s) run::
+
+  ~/src/mumble-ruby-pluginbot/scripts/manage.sh stop
+
+To watch log files in real time run::
+
+  ~/src/mumble-ruby-pluginbot/scripts/manage.sh log
 
 Known problems
 --------------
