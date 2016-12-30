@@ -420,17 +420,17 @@ When the bot(s) appear on your server, register it and start working with it. Tr
 
   If the bot does not connect refer to :ref:`knownproblems-label`.
 
-Start everything automatically
-------------------------------
+Set up bot to start automatically on system startup
+---------------------------------------------------
 
 Start everything automatically – if your system is NOT systemd
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Add the following lines to ``/etc/rc.local`` before the ``exit...`` line to start your bot(s) and mpd instance(s) when your system starts::
+Add the following lines to ``/etc/rc.local`` before the ``exit...`` line to start your bot(s) when your system starts::
 
   su - botmaster -c "/home/botmaster/src/mumble-ruby-pluginbot/scripts/manage.sh start" &
 
-The bot will start automatically on the next reboot.
+The bot will start automatically on the next system start.
 
 Start everything automatically – if your system is systemd
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -443,8 +443,8 @@ Run the following command as root::
 
 The bot will start automatically on the next reboot.
 
-Controlling the bot(s)
-----------------------
+Controlling the bot(s) from your shell
+--------------------------------------
 
 To restart your bot(s) run::
 
