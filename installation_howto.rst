@@ -406,14 +406,14 @@ The youtube plugin needs youtube-dl; download it and make it executable::
 
   chmod u+x ~/src/youtube-dl
 
-Finish it, run your bot(s)
---------------------------
+Almost done, start your bot(s) for the first time
+-------------------------------------------------
 
 You almost finished; now you can run your bot(s)::
 
   ~/src/mumble-ruby-pluginbot/scripts/manage.sh start
 
-When the bot(s) appear on your server, register it and start working with it. Try .help as a first command :)
+When the bot(s) appear on your server, register it/them and start working with it/them. Try ``.help`` as the first command.
 
 
 .. seealso::
@@ -442,6 +442,8 @@ Run the following command as root::
   systemctl enable mumblerubypluginbot
 
 The bot will start automatically on the next reboot.
+
+Thats it, you are done :)
 
 Controlling the bot(s) from your shell
 --------------------------------------
