@@ -27,8 +27,9 @@ The howto can be here: :ref:`appliance-label`.
 Option 3: Use Docker
 ^^^^^^^^^^^^^^^^^^^^
 
-There is a Dockerfile available at https://github.com/Mumble-Ruby-Pluginbot/mumble-ruby-pluginbot-docker to automatically build a Docker container running MPD and the current stable branch of `Mumble-Ruby-Pluginbot`_.
+There is a `Dockerfile available`_ to automatically build a Docker container running MPD and the current stable branch of `Mumble-Ruby-Pluginbot`_.
 
+.. _Dockerfile available: https://github.com/MusicGenerator/mumble-ruby-pluginbot-docker
 .. _Mumble-Ruby-Pluginbot: /
 
 Option 4: Preconfigured images for different systems
