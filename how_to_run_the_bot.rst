@@ -22,9 +22,7 @@ Use a VirtualBox Virtual Appliance – Download a Fully set up Mumble Ruby Plugi
 
 Instead of setting up the bot yourself you can download a fully set up Mumble-Ruby-Pluginbot as a virtual appliance for VirtualBox. All you need to do after importing it to VirtualBox is to change one configuration file and add your server address and bot name.
 
-The howto can be `found here`__.
-
-__ https://wiki.natenom.com/w/VirtualBox_Appliance_for_Mumble-Ruby-Pluginbot
+The howto can be here: :ref:`appliance-label`.
 
 Use Docker
 ^^^^^^^^^^
