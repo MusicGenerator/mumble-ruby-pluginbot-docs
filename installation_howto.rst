@@ -50,8 +50,8 @@ This will be the directory structure when this howto is completed::
   │   │       └── manage.sh
   │   │       └── updater.sh
   │   │   └── [...]
-  │   └── bot1_conf.rb
-  │   └── (optional) more bot<number>_conf.rb
+  │   └── bot1_conf.yml
+  │   └── (optional) more bot<number>_conf.yml
   │   └── [...]
   ├── temp
   │   └── youtubeplugin
@@ -265,7 +265,7 @@ Now we copy the config file for pluginbot to a directory which doesn't interfere
 
 This approach has the advantage that this new config file contains only the variables you want to change. All the other variables not set in your override_config.yml are used from the ~/src/mumble-ruby-pluginbot/config/pluginbot_conf.yml file.
 
-You should now edit the bots configuration file named "bot1_conf.rb" with your favorite editor::
+You should now edit the bots configuration file named "bot1_conf.yml" with your favorite editor::
 
   nano ~/src/bot1_conf.yml
 
