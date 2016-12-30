@@ -460,6 +460,10 @@ To watch log files in real time run::
 
   ~/src/mumble-ruby-pluginbot/scripts/manage.sh log
 
+To get the current status of your bot(s) run::
+
+  ~/src/mumble-ruby-pluginbot/scripts/manage.sh status
+
 Known problems
 --------------
 
