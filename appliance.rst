@@ -35,13 +35,13 @@ __ http://virtualbox.org/
 
 Start it, open the menu and select "Import Appliance...":
 
-[[File:Virtualbox appliance mumblerubypluginbot import.png]]
+.. image:: images/appliance/Virtualbox_appliance_mumblerubypluginbot_import.png
 
 Navigate to the downloaded file and select it in the dialog.
 
 Then you get the following to see:
 
-[[File:Virtualbox appliance mumblerubypluginbot import 2.png]]
+.. image:: images/appliance/Virtualbox_appliance_mumblerubypluginbot_import_2.png
 
 Click on "Import" and wait.
 
@@ -50,7 +50,9 @@ When the import finished you should have a new virtual machine called "Mumble-Ru
 Start the virtual machine
 -------------------------
 
-Now start the virtual machine and login.<br />[[File:Virtualbox appliance mumblerubypluginbot login.png]]
+Now start the virtual machine and login.
+
+.. image:: images/appliance/Virtualbox_appliance_mumblerubypluginbot_login.png
 
 Login as botmaster, the password is also botmaster.
 
@@ -66,10 +68,11 @@ Edit the bot configuration::
 
   nano /home/botmaster/src/bot1_conf.rb
 
-[[File:Virtualbox appliance mumblerubypluginbot edit botconf.png]]
+.. image:: images/appliance/Virtualbox_appliance_mumblerubypluginbot_edit_botconf.png
 
-This is my example setup for my own bot:<br />
-[[File:Virtualbox appliance mumblerubypluginbot edit botconf done.png]]
+This is my example setup for my own bot:
+
+.. image:: images/appliance/Virtualbox_appliance_mumblerubypluginbot_edit_botconf_done.png
 
 If you made your changes press {{KKey|Ctrl}} + {{KKey|o}}, followed by {{KKey|Enter}} to save the file and then {{KKey|Ctrl}} + {{KKey|x}} to leave the editor.
 
@@ -110,7 +113,7 @@ Stop the bot
 
 To stop the bot, press the red X of the virtual machine window and choose "Send the shutdown signal" from the dialog.
 
-[[File:Virtualbox appliance mumblerubypluginbot close vm.png]]
+.. image:: images/appliance/Virtualbox_appliance_mumblerubypluginbot_close_vm.png
 
 Information about the appliance
 -------------------------------
