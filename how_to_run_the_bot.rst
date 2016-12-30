@@ -5,11 +5,11 @@ How to run the bot
 
 There are several methods to run the bot.
 
-Installation
-------------
+Installation options
+--------------------
 
-Install it on your own – Installation Howto
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Option 1: Install it on your own – Installation Howto
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Using this installation howto is basically a copy and paste task, even if you are unexperienced with Linux.
 
@@ -17,22 +17,22 @@ See :ref:`installationonyourown-label`.
 
 .. _virtualboxappliance-label:
 
-Use a VirtualBox Virtual Appliance – Download a Fully set up Mumble Ruby Pluginbot
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Option 2: Use a VirtualBox Virtual Appliance – Download a Fully set up Mumble Ruby Pluginbot
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Instead of setting up the bot yourself you can download a fully set up Mumble-Ruby-Pluginbot as a virtual appliance for VirtualBox. All you need to do after importing it to VirtualBox is to change one configuration file and add your server address and bot name.
 
 The howto can be here: :ref:`appliance-label`.
 
-Use Docker
-^^^^^^^^^^
+Option 3: Use Docker
+^^^^^^^^^^^^^^^^^^^^
 
 There is a Dockerfile available at https://github.com/Mumble-Ruby-Pluginbot/mumble-ruby-pluginbot-docker to automatically build a Docker container running MPD and the current stable branch of `Mumble-Ruby-Pluginbot`_.
 
 .. _Mumble-Ruby-Pluginbot: /
 
-Preconfigured images for different systems
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Option 4: Preconfigured images for different systems
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 See :ref:`systemimages-label`.
 
