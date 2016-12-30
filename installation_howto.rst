@@ -426,7 +426,7 @@ Start everything automatically
 Start everything automatically – if your system is NOT systemd
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Add the following lines to <code>/etc/rc.local</code> before the ''exit...'' line to start your bot(s) and mpd instance(s) when your system starts::
+Add the following lines to ``/etc/rc.local`` before the ``exit...`` line to start your bot(s) and mpd instance(s) when your system starts::
 
   su - botmaster -c "/home/botmaster/src/mumble-ruby-pluginbot/scripts/manage.sh start" &
 
