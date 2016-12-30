@@ -12,7 +12,7 @@ __ https://github.com/MusicGenerator/mumble-ruby-pluginbot/blob/master/LICENSE
 
 You can find the source code on `GitHub`__.
 
-__ https://github.com/MusicGenerator/mumble-ruby-pluginbot.
+__ https://github.com/MusicGenerator/mumble-ruby-pluginbot
 
 Contents
 --------
