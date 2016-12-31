@@ -3,6 +3,10 @@
 Pre configured system images
 ============================
 
+.. note::
+
+  All these system images were built for the old release 0.9.1.2 and were not yet updated for the 0.10.0 release.
+
 Banana Pi
 ---------
 
