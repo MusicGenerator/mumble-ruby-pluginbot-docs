@@ -6,12 +6,15 @@ As of 2016-12-31 the stable release of Mumble-Ruby-Pluginbot was successfully in
 
 - Debian 'Wheezy' 7 (oldstable)
 - Debian 'Jessie' 8 (stable)
-- Ubuntu 14.04 (Trusty) (thanks @robin)
+- Ubuntu 14.04 (Trusty) (thanks `@robin`_)
 - Ubuntu 15.10
 - Ubuntu 15.10 Server
-- Ubuntu 16.04 LTS (thanks @robin)
-- Arch Linux (thanks @Nascher)
+- Ubuntu 16.04 LTS (thanks `@robin`_)
+- Arch Linux (thanks `@Nascher`_)
 - `Ubuntu based smallest DigitalOcean.com virtual server`_
+
+.. _@robin: https://rbn.gr
+.. _@Nascher: https://nascher.org
 
 .. _Ubuntu based smallest DigitalOcean.com virtual server: https://blog.natenom.com/2016/11/mumble-ruby-pluginbots-on-the-smallest-digitalocean-virtual-server/
 
