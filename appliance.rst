@@ -12,17 +12,15 @@ The result is a fully functional instance of the :ref:`start-label`.
 Download the appliance
 ----------------------
 
-.. _note::
+`Download the appliance from here`_ and save it somewhere on your computer.
 
-  `Download the appliance from here`_ and save it somewhere on your computer.
+.. _Download the appliance from here: https://www.natenom.com/fixme/
 
-  .. _Download the appliance from here: https://www.robingroppe.de/media/mumble-ruby-pluginbot/Mumble-Ruby-Pluginbot-2.3%20(Bot%20version%200.9.1.2%20-%20Sparkling%20Soda%20(Out%20of%20Gas)).ova
+The file size is around 700/800 MiB.
 
-  The file size is around 700/800 MiB.
+This version was created on FIXME.
 
-  This version was created on 18th October 2016.
-
-  The sha256 checksum of the current version is: '''18fed86a5a53f109f54e88f7a0cb1e15add60db0487b4e795941d21f7795c5f2'''
+The sha256 checksum of the current version is: FIXME.
 
 Import appliance into VirtualBox
 --------------------------------
