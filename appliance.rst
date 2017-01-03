@@ -14,7 +14,9 @@ Download the appliance
 
 .. _note::
 
-  Download the appliance from [https://www.robingroppe.de/media/mumble-ruby-pluginbot/Mumble-Ruby-Pluginbot-2.3%20(Bot%20version%200.9.1.2%20-%20Sparkling%20Soda%20(Out%20of%20Gas)).ova here] and save it somewhere on your computer.
+  `Download the appliance from here`_ and save it somewhere on your computer.
+
+  .. _Download the appliance from here: https://www.robingroppe.de/media/mumble-ruby-pluginbot/Mumble-Ruby-Pluginbot-2.3%20(Bot%20version%200.9.1.2%20-%20Sparkling%20Soda%20(Out%20of%20Gas)).ova
 
   The file size is around 700/800 MiB.
 
