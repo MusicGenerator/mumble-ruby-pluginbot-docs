@@ -24,10 +24,6 @@ Download the appliance
 
   The sha256 checksum of the current version is: '''18fed86a5a53f109f54e88f7a0cb1e15add60db0487b4e795941d21f7795c5f2'''
 
-.. _note::
-
-  Please consider a [https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SZCFW87WLSSKJ donation via PayPal] if you like this appliance to support the work :)
-
 Import appliance into VirtualBox
 --------------------------------
 
