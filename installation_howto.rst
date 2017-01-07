@@ -259,8 +259,6 @@ Do the following commands::
 
   cd mumble-ruby-pluginbot
 
-  git checkout -b devel origin/devel
-
 Now we copy the config file for pluginbot to a directory which doesn't interfere with the source code::
 
   cp templates/override_config.yml ~/src/bot1_conf.yml
