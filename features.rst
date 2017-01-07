@@ -2,6 +2,7 @@ Features
 ========
 
 - Supports client certificates and thus can be registered on a server by an admin or even can register itself if the server allows it.
+- As of version 0.10.0 it is available in English, German and Bavarian.
 - Bot automatically adjusts its bitrate to fit the servers bandwidth limitation.
 - Stream audio from an MPD.
 - Support for :ref:`plugins-label`.
