@@ -22,7 +22,7 @@ Download the appliance
 
 `Download one of the appliances from here`_ and save it somewhere on your computer.
 
-.. _Download one of the appliances from here: https://drive.google.com/open?id=0B_VxOPI0woplMndaS2tIanIxeG8
+.. _Download one of the appliances from here: https://www.robingroppe.de/media/mumble-ruby-pluginbot/0.10/Virtual%20Appliances/
 
 Import appliance into VirtualBox
 --------------------------------
