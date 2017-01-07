@@ -62,19 +62,15 @@ Change bot settings so that the bot can connect to your Mumble server
 
 Edit the bot configuration::
 
-  nano /home/botmaster/src/bot1_conf.rb
+  nano /home/botmaster/src/bot1_conf.yml
 
 .. image:: images/appliance/Virtualbox_appliance_mumblerubypluginbot_edit_botconf.png
 
-This is my example setup for my own bot:
-
-.. image:: images/appliance/Virtualbox_appliance_mumblerubypluginbot_edit_botconf_done.png
-
-If you made your changes press {{KKey|Ctrl}} + {{KKey|o}}, followed by {{KKey|Enter}} to save the file and then {{KKey|Ctrl}} + {{KKey|x}} to leave the editor.
+If you made your changes press "Ctrl + o" followed by "Enter" to save the file and then "Ctrl + x" to leave the editor.
 
 Now restart the virtual machine::
 
-  sudo reboot
+  reboot
 
 Thats it :)
 
@@ -102,7 +98,7 @@ Update the bot
 Log in as user botmaster with password botmaster and do the following::
 
   /home/botmaster/src/mumble-ruby-pluginbot/scripts/updater.sh
-  sudo reboot
+  reboot
 
 Stop the bot
 ^^^^^^^^^^^^
@@ -119,7 +115,7 @@ This is just for your information, no need to do anything here.
 VirtualBox configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^
 - System partition: 5 GB (dynamic size)
-- Home partition: 100 GB (dynamic size, it grows while you download songs)
+- Home partition: 100 GB (dynamic size, it grows up to that size when you download songs)
 - No swap partition is available.
 - RAM: 512 MiB
 - CPU count: 1
