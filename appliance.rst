@@ -74,9 +74,10 @@ Now restart the virtual machine::
 
 Thats it :)
 
-Have fun with your own :ref:`start-label` and `contact me`_ if you have feedback.
+Have fun with your own :ref:`start-label` and `contact me`_ if you have feedback related to this documentation or `contact us`_ if you have generel feedback about this project.
 
 .. _contact me: https://www.natenom.com/
+.. _contact us: https://github.com/MusicGenerator
 
 Now register your new bot on your Mumble server and write .help to him.
 
