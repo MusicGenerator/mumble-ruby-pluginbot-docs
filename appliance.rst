@@ -9,18 +9,20 @@ You only need to configure the ip of your Mumble-Server, the username. Then you 
 
 The result is a fully functional instance of the :ref:`start-label`.
 
+Choose which appliance you need
+-------------------------------
+
+There are two flavors of the appliance:
+
+- Mumble-Ruby-Pluginbot-0.10.0 – shell only
+- Mumble-Ruby-Pluginbot-0.10.0 GUI – with a lightweight Desktop Environment and shortcuts to control the bot and edit its configuration
+
 Download the appliance
 ----------------------
 
-`Download the appliance from here`_ and save it somewhere on your computer.
+`Download one of the appliances from here`_ and save it somewhere on your computer.
 
-.. _Download the appliance from here: https://www.natenom.com/fixme/
-
-The file size is around 700/800 MiB.
-
-This version was created on FIXME.
-
-The sha256 checksum of the current version is: FIXME.
+.. _Download one of the appliances from here: https://drive.google.com/open?id=0B_VxOPI0woplMndaS2tIanIxeG8
 
 Import appliance into VirtualBox
 --------------------------------
@@ -48,9 +50,8 @@ Start the virtual machine
 
 Now start the virtual machine and login.
 
-.. image:: images/appliance/Virtualbox_appliance_mumblerubypluginbot_login.png
-
-Login as botmaster, the password is also botmaster.
+The username is: botmaster
+The password is: botmaster
 
 Change bot settings so that the bot can connect to your Mumble server
 ---------------------------------------------------------------------
@@ -59,6 +60,12 @@ Change bot settings so that the bot can connect to your Mumble server
 
   - Please note that on most Mumble servers you can't use space characters in usernames; use an underscore ("_") instead.
   - If you set the value of mumbleserver_targetchannel to "" the bot enters the default channel on the first connect and the previous channel on reconnect once he is registered.
+
+
+Without GUI
+^^^^^^^^^^^
+
+.. image:: images/appliance/Virtualbox_appliance_mumblerubypluginbot_login.png
 
 Edit the bot configuration::
 
@@ -71,6 +78,30 @@ If you made your changes press "Ctrl + o" followed by "Enter" to save the file a
 Now restart the virtual machine::
 
   reboot
+
+With GUI
+^^^^^^^^^^^
+
+.. image:: images/appliance/Virtualbox_appliance_mumblerubypluginbot_login_gui.png
+
+After logging in you can see a window to control the MPD (music server), one to view the log of your bot and another one to edit the bots configuration "bot1_conf.yml".
+
+.. image:: images/appliance/Virtualbox_appliance_mumblerubypluginbot_gui_desktop.png
+
+Your bot is already running and by default connected to `Natenoms Mumble-Server`_. To let it connect to your own server you must now adapt the bots configuration and then restart the bot or just restart the complete virtual machine.
+
+.. _Natenoms Mumble-Server: https://www.natenom.com/mymumbleserver/
+
+On the desktop there are three shortcuts to control your bot:
+
+- Edit your bots config...
+- Restart your bot
+- Watch bot logs live
+
+There is also a shortcut named "music_of_your_bot" where the bots music is located.
+
+Have fun...
+-----------
 
 Thats it :)
 
