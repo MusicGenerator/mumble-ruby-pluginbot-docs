@@ -14,8 +14,8 @@ Choose which appliance you need
 
 There are two flavors of the appliance:
 
-- Mumble-Ruby-Pluginbot-0.10.0 – shell only
-- Mumble-Ruby-Pluginbot-0.10.0 GUI – with a lightweight Desktop Environment and shortcuts to control the bot and edit its configuration
+- Mumble-Ruby-Pluginbot Terminal – shell only
+- Mumble-Ruby-Pluginbot GUI – with a lightweight Desktop Environment and shortcuts to control the bot and edit its configuration
 
 Download the appliance
 ----------------------
@@ -78,6 +78,9 @@ If you made your changes press "Ctrl + o" followed by "Enter" to save the file a
 Now restart the virtual machine::
 
   reboot
+
+.. _note::
+  You can create a GUI flavor out of your Terminal flavor if you run the script /home/botmaster/src/.export/install_desktop.sh
 
 With GUI
 ^^^^^^^^^^^
