@@ -46,13 +46,12 @@ Download one of the following compressed images
 Install on SD-Card
 ^^^^^^^^^^^^^^^^^^
 
-- Linux
-  `sudo gunzip -c pluginbot.arch.img.pi2.gz | dd of=/dev/sdX`
+  - Linux
+    `sudo gunzip -c pluginbot.arch.img.pi2.gz | dd of=/dev/sdX`
+    where sdX is the device for your SD-Card!
 
-  where sdX is the device for your SD-Card!
-
--Windows
-  Unzip pluginbot.arch.img.pi2.zip and then write image2.img with Win32DiskImager.
+  - Windows
+    Unzip pluginbot.arch.img.pi2.zip and then write image2.img with Win32DiskImager.
 
 Raspberry Pi3
 -------------
@@ -68,19 +67,9 @@ Download one of the following compressed images
 Install on SD-Card
 ^^^^^^^^^^^^^^^^^^
 
-- Linux
-  `sudo gunzip -c pluginbot.arch.img.pi3.gz | dd of=/dev/sdX`
+  - Linux
+    `sudo gunzip -c pluginbot.arch.img.pi3.gz | dd of=/dev/sdX`
+    where sdX is the device for your SD-Card!
 
-  where sdX is the device for your SD-Card!
-
--Windows
-  Unzip pluginbot.arch.img.pi3.zip and then write image2.img with Win32DiskImager.
-
-
-
-
-
-
-
-
-https://www.robingroppe.de/media/mumble-ruby-pluginbot/0.10/armboards/pluginbot.arch.img.pi3.gz
+  - Windows
+    Unzip pluginbot.arch.img.pi3.zip and then write image2.img with Win32DiskImager.
