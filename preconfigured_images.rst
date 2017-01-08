@@ -3,11 +3,20 @@
 Pre configured system images
 ============================
 
+:: _note::
+
+    On Windows you need to download `Win32 Disk Imager`_ to write the images to an sdcard.
+
+    Linux has all the tools onboard :)
+
+.. _Win32 Disk Imager: https://sourceforge.net/projects/win32diskimager/
+
 Login credentials for all images
 --------------------------------
 
 - root : root
 - botmaster : botmaster
+
 
 Installaltion on SD-Card
 ------------------------
