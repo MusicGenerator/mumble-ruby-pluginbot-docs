@@ -15,14 +15,18 @@ Installaltion on SD-Card
 Linux
 ^^^^^
 
-sudo gunzip -c pluginbot.arch.img.ARCHITECTURE.gz | dd of=/dev/sdX
+::
+
+    sudo gunzip -c pluginbot.arch.img.ARCHITECTURE.gz | dd of=/dev/sdX
 
 where sdX is the device for your SD-Card!
 
 Windows
 ^^^^^^^
 
-Unzip pluginbot.arch.img.ARCHITECTURE.zip and then write image2.img with Win32DiskImager.
+::
+
+    Unzip pluginbot.arch.img.ARCHITECTURE.zip and then write image2.img with Win32DiskImager.
 
 Downloads
 ---------
