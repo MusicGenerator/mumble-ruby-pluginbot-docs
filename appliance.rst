@@ -79,9 +79,7 @@ Now restart the virtual machine::
 
   reboot
 
-.. _note::
-
-  You can create a GUI flavor out of your Terminal flavor if you run the script /home/botmaster/src/.export/install_desktop.sh
+.. _note:: You can create a GUI flavor out of your Terminal flavor if you run the script /home/botmaster/src/.export/install_desktop.sh
 
 
 With GUI
