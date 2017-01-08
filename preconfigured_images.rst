@@ -9,7 +9,7 @@ Pre configured system images
 
   Linux has all the tools onboard :)
 
-.. _Win32 Disk Imager: https://sourceforge.net/projects/win32diskimager/
+  .. _Win32 Disk Imager: https://sourceforge.net/projects/win32diskimager/
 
 Login credentials for all images
 --------------------------------
@@ -28,14 +28,12 @@ Linux
 
     sudo gunzip -c pluginbot.arch.img.ARCHITECTURE.gz | dd of=/dev/sdX
 
-where sdX is the device for your SD-Card!
+Where sdX is the device for your SD-Card.
 
 Windows
 ^^^^^^^
 
-::
-
-    Unzip pluginbot.arch.img.ARCHITECTURE.zip and then write image2.img with Win32DiskImager.
+Unzip pluginbot.arch.img.ARCHITECTURE.zip and then write image2.img with Win32DiskImager.
 
 Downloads
 ---------
