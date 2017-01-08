@@ -3,11 +3,11 @@
 Pre configured system images
 ============================
 
-:: _note::
+.. _note::
 
-    On Windows you need to download `Win32 Disk Imager`_ to write the images to an sdcard.
+  On Windows you need to download `Win32 Disk Imager`_ to write the images to an sdcard.
 
-    Linux has all the tools onboard :)
+  Linux has all the tools onboard :)
 
 .. _Win32 Disk Imager: https://sourceforge.net/projects/win32diskimager/
 
