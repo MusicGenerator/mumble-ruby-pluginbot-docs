@@ -70,3 +70,12 @@ Download one of the following compressed images
 
 .. _pluginbot.arch.img.pi3.gz: https://www.robingroppe.de/media/mumble-ruby-pluginbot/0.10/armboards/pluginbot.arch.img.pi3.gz
 .. _pluginbot.arch.img.pi3.zip: https://www.robingroppe.de/media/mumble-ruby-pluginbot/0.10/armboards/pluginbot.arch.img.pi3.zip
+
+
+.. note::
+
+  On newer distributions instead of editing the file you need to disable the MPD service by running the following command as root or with sudo::
+
+    systemctl disable mpd
+
+    systemctl stop mpd
