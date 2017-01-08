@@ -56,7 +56,7 @@ The password is: botmaster
 Change bot settings so that the bot can connect to your Mumble server
 ---------------------------------------------------------------------
 
-.. _note::
+.. note::
 
   - Please note that on most Mumble servers you can't use space characters in usernames; use an underscore ("_") instead.
   - If you set the value of mumbleserver_targetchannel to "" the bot enters the default channel on the first connect and the previous channel on reconnect once he is registered.
@@ -80,7 +80,7 @@ Now restart the virtual machine::
   reboot
 
 
-.. _note::
+.. note::
 
   You can create a GUI flavor out of your Terminal flavor if you run the script /home/botmaster/src/.export/install_desktop.sh
 

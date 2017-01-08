@@ -26,7 +26,7 @@ Windows
 
 Unzip pluginbot.arch.img.ARCHITECTURE.zip and then write image2.img with Win32DiskImager.
 
-.. _note::
+.. note::
 
     On Windows you need to download `Win32 Disk Imager`_ to write the images to an sdcard.
 
