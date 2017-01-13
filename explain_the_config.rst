@@ -362,7 +362,7 @@ plugin:bandcamp:folder:download
 * Type: string
 * Default: "downloadedfrombc/"
 
-The subdirectory the bot copies downloaded audio files into. The full path is built from ``plugin:mpd:musicfolder``+``plugin:bandcamp:folder:download``.
+The subdirectory the bot copies downloaded audio files into. The full path is built from ``plugin:mpd:musicfolder+plugin:bandcamp:folder:download``.
 
 plugin:bandcamp:folder:temp
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -370,7 +370,7 @@ plugin:bandcamp:folder:temp
 * Type: string
 * Default: "bandcampplugin/"
 
-The subdirectory the bot downloads new audio files into. The full path is built from ``main:tempdir``+``plugin:bandcamp:folder:temp``.
+The subdirectory the bot downloads new audio files into. The full path is built from ``main:tempdir+plugin:bandcamp:folder:temp``.
 
 plugin:bandcamp:youtube_dl:path
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
