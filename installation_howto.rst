@@ -9,6 +9,7 @@ In this tutorial/howto we install the :ref:`start-label` into a users home direc
 
   - :ref:`compatibility-label`
   - :ref:`howtorunthebot-label`
+  - :ref:`configexplain-label`
 
 How much time will you need?
 --------------------------
