@@ -180,7 +180,7 @@ Now setup the environment for Ruby::
 Get and build mumble-ruby and ruby-mpd and other dependencies
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Now we download the source code of [[Mumble-Ruby]] and build it::
+Now we download the source code of Mumble-Ruby and build it::
 
   cd src
 
