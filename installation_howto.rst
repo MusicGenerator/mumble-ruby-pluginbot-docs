@@ -194,11 +194,13 @@ Now we download the source code of [[Mumble-Ruby]] and build it::
 
   rvm @bots do gem install mumble-ruby-*.gem
 
-Install [https://github.com/archSeer/ruby-mpd/ ruby-mpd] so that the bot can control [[MPD]]::
+Install `ruby-mpd`_ so that the bot can control MPD::
 
   rvm @bots do gem install ruby-mpd
 
   rvm @bots do gem install crack
+
+.. _ruby-mpd: https://github.com/archSeer/ruby-mpd/
 
 Download and set up celt-ruby and libcelt
 -----------------------------------------
