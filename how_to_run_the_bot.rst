@@ -35,10 +35,6 @@ There is a `Dockerfile available`_ to automatically build a Docker container run
 Option 4: Preconfigured images for different systems
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. note::
-
-  All these system images were built for the old release 0.9.1.2 and were not yet updated for the 0.10.0 release.
-
 See :ref:`systemimages-label`.
 
 Maintenance
