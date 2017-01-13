@@ -123,7 +123,7 @@ After the download the bots copies the downloaded files into the final directory
 For example these are the resulting directories for the Youtube plugin:
 
 - temp: ``/home/botmaster/temp/youtubeplugin/``
-- final: ``/home/botmaster/music/youtubeplugin/``
+- final: ``/home/botmaster/music/downloadedfromyt/``
 
 main:logfile
 ^^^^^^^^^^^^
