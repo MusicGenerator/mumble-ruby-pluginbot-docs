@@ -383,8 +383,12 @@ plugin:bandcamp:youtube_dl:prefixes
 plugin:bandcamp:to_mp3
 ^^^^^^^^^^^^^^^^^^^^^^
 
-* Type: boolean
-* Default: false
+* Type: undefined
+* Default: nil
+
+By default the bot tries to download OPUS encoded audio files or whatever is available. Set this to true to convert the audio files into MP3.
+
+Set this to true but nil in order to convert audio files into MP3.
 
 Ektoplazm plugin settings
 -------------------------
