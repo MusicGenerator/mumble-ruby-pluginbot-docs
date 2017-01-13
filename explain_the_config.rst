@@ -55,7 +55,7 @@ The following config shows all available configuration options as of version 0.1
 
 
 Syntax within this help
------------------------
+=======================
 
 If we refer to a configuration option in this help text we write for example "main:tempdir" if we mean::
 
@@ -65,30 +65,6 @@ If we refer to a configuration option in this help text we write for example "ma
 
 Explanations
 ============
-
-.. table:: Configuration options
-
-   +-------------------------------------------------------+-------------+-------------------------------------------+-----------------------------+
-   | Config Path                                           | Type        | Default value                             | Value range                 |
-   +=======================================================+=============+===========================================+=============================+
-   |                                                       |             |                                           |                             |
-   +-------------------------------------------------------+-------------+-------------------------------------------+-----------------------------+
-   |                                                       |             |                                           |                             |
-   +-------------------------------------------------------+-------------+-------------------------------------------+-----------------------------+
-   |                                                       |             |                                           |                             |
-   +-------------------------------------------------------+-------------+-------------------------------------------+-----------------------------+
-   |                                                       |             |                                           |                             |
-   +-------------------------------------------------------+-------------+-------------------------------------------+-----------------------------+
-   |                                                       |             |                                           |                             |
-   +-------------------------------------------------------+-------------+-------------------------------------------+-----------------------------+
-   |                                                       |             |                                           |                             |
-   +-------------------------------------------------------+-------------+-------------------------------------------+-----------------------------+
-   |                                                       |             |                                           |                             |
-   +-------------------------------------------------------+-------------+-------------------------------------------+-----------------------------+
-   |                                                       |             |                                           |                             |
-   +-------------------------------------------------------+-------------+-------------------------------------------+-----------------------------+
-   |                                                       |             |                                           |                             |
-   +-------------------------------------------------------+-------------+-------------------------------------------+-----------------------------+
 
 config:version
 --------------
@@ -103,7 +79,7 @@ debug
 -----
 
 * Type: boolean
-* Default value: true
+* Default: true
 * Possible values: true, false
 
 Set this to false to disable debug output in the logfile.
@@ -141,6 +117,7 @@ main:ducking
 
 * Type: boolean
 * Default: false
+* Possible values: true, false
 
 If true the bot automatically reduces its volume while users in the channel are talking.
 
@@ -149,6 +126,7 @@ main:automute_if_alone
 
 * Type: boolean
 * Default: true
+* Possible values: true, false
 
 The bot automatically mutes itself if he is alone in a channel.
 
@@ -157,6 +135,7 @@ main:stop_on_unregistered
 
 * Type: boolean
 * Default: true
+* Possible values: true, false
 
 The bot pauses the music or stops a radiostream if an unregistered user enters the channel.
 
@@ -170,22 +149,23 @@ Calculating value for 'channel_notify':
 
 Add all values for the desired channel notification
 
-1    send message when volume change
-2    send message when database update
-4    send message when random mode changed
-8    send message when single mode changed
-16   send message when crossfading changed
-32   send message when consume-mode changed
-64   send message when repeat-mode changed
-128  send message when state changes
+* 1    send message when volume change
+* 2    send message when database update
+* 4    send message when random mode changed
+* 8    send message when single mode changed
+* 16   send message when crossfading changed
+* 32   send message when consume-mode changed
+* 64   send message when repeat-mode changed
+* 128  send message when state changes
 
-sum = value
+Sum up all you need and use it as the configuration value.
 
 main:controllable
 ^^^^^^^^^^^^^^^^^
 
 * Type: boolean
 * Default: true
+* Possible values: true, false
 
 Bot is only controllable if this is set to true. If false it will ignore all text commands.
 
@@ -202,12 +182,18 @@ main:control:message:private_only
 
 * Type: boolean
 * Default: false
+* Possible values: true, false
+
+If true the bot reacts only to private messages and not to channel messages. If false, the bot reacts to channel and private messages.
 
 main:control:message:registered_only
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * Type: boolean
 * Default: true
+* Possible values: true, false
+
+If true the bot reacts only to registered users. If false also unregistered users can control the bot.
 
 main:control:historysize
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -215,35 +201,139 @@ main:control:historysize
 * Type: int
 * Default: 20
 
+Store this many entries in the command history of the bot.
+
+main:display:comment:set
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: boolean
+* Default: true
+* Possible values: true, false
+
+If true the bot sets its comment to display the current music that is being played.
+
+main:user:superuser
+^^^^^^^^^^^^^^^^^^^
+You can define several superusers here. To get a users hash use the command "showhash", see "internals".
+
+The commands "reset", "set" and "settings" can only be used by the defined superusers.
+
+Safety Information: All predefined entries for superuser are only there to show you how it works, they will never work.
 
 
-display:
-  comment:
-    set: true
-user:
-  superuser:
-    72x60721xx216x4xx017f3x1x476d4358x48x648: dafoxia
-    1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ1234: anotheruser
-  banned:
-    123452342348234782937ckjfvo32ckj20938473: user3
-    df92lkjvdkfj2okdfh20398vhj209eu2hjd092hn: anotherusername4
-  bound: # "1234567890ABCDEFGHIJKLMN"
-certfolder: "/home/botmaster/certs/"
-fifo: "/home/botmaster/mpd1/mpd.fifo"
-logo: "../config/logo/logo.html"
-timer:
-  ticks:  3600
-blacklisted_commands: ""
+main:user:banned
+^^^^^^^^^^^^^^^^
+You can define several banned users here. To get a users hash use the command "showhash", see "internals".
 
-mumble:
-use_vbr: true
-bitrate: 72000
-host: m.natenom.com
-port: 64738
-name: "MumbleRubyPluginbot"
-password: ''
-channel: Bottest
+The bot will ignore the defined users completely.
 
+Safety Information: All predefined entries for banned users are only there to show you how it works, they will never work.
+
+
+main:user:bound
+^^^^^^^^^^^^^^^
+Only ONE user hash as a string. If definied nobody will be able to use the bind command anymore but the defined user. The blacklist command can only be used after being bound.
+
+
+main:certfolder
+^^^^^^^^^^^^^^^
+
+* Type: string
+* Default: "/home/botmaster/certs/"
+
+In this folder the bot automatically creates an openssl certificate per username you set up. See mumble: name.
+
+main:fifo
+^^^^^^^^^
+
+* Type: string
+* Default: "/home/botmaster/mpd1/mpd.fifo"
+
+This fifo must also be used by the MPD the bot connects to.
+
+main:logo
+^^^^^^^^^
+
+* Type: string
+* Default: "../config/logo/logo.html"
+
+A relative path to the logo the bot uses.
+
+main:timer:ticks
+^^^^^^^^^^^^^^^^
+
+* Type: int
+* Default: 3600
+
+FIXME
+
+main:blacklisted_commands
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: string
+* Default: ""
+
+Here you can disable specific commands. Be aware that currently the bot checks this very stupid. That means that it checks only the beginning of a word. For example if you blacklist set then settings is also blacklisted.
+
+mumble
+------
+
+mumble:use_vbr
+^^^^^^^^^^^^^^
+
+* Type: boolean
+* Default: true
+* Possible values: true, false
+
+If true the bot encodes with a variable bitrate. If 0, "no" nor false it encodes with a constant bitrate.
+
+mumble:bitrate
+^^^^^^^^^^^^^^
+
+* Type: int
+* Default: 72000
+
+The overall bandwidth the bot is allowed to use. Please note that the bot is able to ask the server for its maximum bandwidth and so can reduce its bitrate if you set it higher than possible.
+
+mumble:host
+^^^^^^^^^^^
+
+* Type: string
+* Default: m.natenom.com
+
+The hostname or IP address of the Mumble server your bot connects to.
+
+mumble:port
+^^^^^^^^^^^
+
+* Type: int
+* Default: 64738
+
+The port of the Mumble server your bot connects to.
+
+mumble:name
+^^^^^^^^^^^
+
+* Type: string
+* Default: "MumbleRubyPluginbot"
+
+The name of your bot. Be aware that on most servers you are not allowed to use white spaces or other special characters.
+
+mumble:password
+^^^^^^^^^^^^^^^
+
+* Type: string
+* Default: ""
+
+If your user is registered via a password, set it here or if the server uses a password, use this, too.
+
+mumble:channel
+^^^^^^^^^^^^^^
+
+* Type: string
+* Default: "Bottest"
+
+The channel the bot connects to. This is also the channel the bot tries to enter if you command it to "gotobed".
 
 
 
