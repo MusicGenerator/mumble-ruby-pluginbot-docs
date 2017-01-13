@@ -26,6 +26,7 @@ Contents
    plugins
    how_to_run_the_bot
    installation_howto
+   explain_the_config
    known_problems
    status
    faq
