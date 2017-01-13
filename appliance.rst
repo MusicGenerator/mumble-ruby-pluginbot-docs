@@ -50,8 +50,8 @@ Start the virtual machine
 
 Now start the virtual machine and login.
 
-The username is: botmaster
-The password is: botmaster
+- The username is: botmaster
+- The password is: botmaster
 
 Change bot settings so that the bot can connect to your Mumble server
 ---------------------------------------------------------------------

@@ -87,9 +87,8 @@ Main settings
 config:version
 ^^^^^^^^^^^^^^
 
-* Type: boolean
-* Default: true
-* Possible values: true, false
+* Type: float
+* Default: 2.1
 
 This is for internal reasons only and is not meant to be changed.
 
