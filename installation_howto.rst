@@ -466,6 +466,15 @@ To get the current status of your bot(s) run::
 
   ~/src/mumble-ruby-pluginbot/scripts/manage.sh status
 
+
+Configuration settings of your bot
+----------------------------------
+
+.. seealso::
+
+    See :ref:`configexplain-label`.
+
+
 Known problems
 --------------
 
