@@ -2,7 +2,7 @@
 
 Compatibility
 =============
-As of 2016-12-31 the stable release of Mumble-Ruby-Pluginbot was successfully installed and tested on the following distributions with the official :ref:`installationonyourown-label`:
+As of 2016-12-31 the stable release of Mumble-Ruby-Pluginbot was successfully installed and tested on the following distributions with the official :ref:`Installation howto <installationonyourown-label>`:
 
 - Debian 'Wheezy' 7 (oldstable)
 - Debian 'Jessie' 8 (stable)

@@ -3,11 +3,11 @@
 VirtualBox Appliance for Mumble-Ruby-Pluginbot
 ==============================================
 
-This page shows you how to download the VirtualBox Appliance for the :ref:`start-label` and import it into your VirtualBox.
+This page shows you how to download the VirtualBox Appliance for the :ref:`Mumble-Ruby-Pluginbot <start-label>` and import it into your VirtualBox.
 
 You only need to configure the ip of your Mumble-Server, the username. Then you can register your bot on your server; thats it :)
 
-The result is a fully functional instance of the :ref:`start-label`.
+The result is a fully functional instance of the :ref:`Mumble-Ruby-Pluginbot <start-label>`.
 
 Choose which appliance you need
 -------------------------------
@@ -111,7 +111,7 @@ Have fun...
 
 Thats it :)
 
-Have fun with your own :ref:`start-label` and `contact me`_ if you have feedback related to this documentation or `contact us`_ if you have general feedback about this project.
+Have fun with your own :ref:`Mumble-Ruby-Pluginbot <start-label>` and `contact me`_ if you have feedback related to this documentation or `contact us`_ if you have general feedback about this project.
 
 .. _contact me: https://www.natenom.com/
 .. _contact us: https://github.com/MusicGenerator
