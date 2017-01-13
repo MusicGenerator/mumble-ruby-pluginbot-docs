@@ -13,7 +13,7 @@ Also every plugin does have its own configuration file, see ``plugins/*.yml``.
 Override configuration
 ----------------------
 
-If you start your bot on the shell without setting a specified configuration file it will use the default configuration files config/config.yml and all plugins/*yml files.
+If you start your bot on the shell without setting a specified configuration file it will use the default configuration files ``config/config.yml`` and all ``plugins/*yml`` files.
 
 If you want to use an own configuration file you don't need to write one with all configuration settings but only with those you want to change. A small sample override configuration file is available in ``templates/override_config.yml``.
 
