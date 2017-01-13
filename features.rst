@@ -2,10 +2,10 @@ Features
 ========
 
 - Supports client certificates and thus can be registered on a server by an admin or even can register itself if the server allows it.
-- As of version 0.10.0 it is available in English, German and Bavarian.
+- As of version 0.10.0 it is available in English, German and Bavarian, see :ref:`here <settings_language>`.
 - Bot automatically adjusts its bitrate to fit the servers bandwidth limitation.
 - Stream audio from an MPD.
-- Support for :ref:`plugins-label`.
+- Support for :ref:`plugins <plugins-label>`.
 - Can download music, for example from Youtube or other websites.
 - Can search for music on Youtube or other websites.
 - Streaming of internet radio.

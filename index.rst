@@ -46,6 +46,7 @@ This documentation is written in ReStructuredText.
 
 - `ReStructuredText (on Wikipedia)`_
 - http://www.sphinx-doc.org/en/1.5.1/rest.html
+- http://www.sphinx-doc.org/en/1.5.1/markup/inline.html
 - http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html
 
 .. _ReStructuredText (on Wikipedia): https://en.wikipedia.org/wiki/ReStructuredText

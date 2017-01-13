@@ -38,14 +38,15 @@ Lets say you want to listen to music from Mozart...
 
     .yta all
 
-- or just one specific song::
+- or just one or more specific song(s)::
 
-    .yta 2
+    .yta 0 2
 
 - In both cases the bot will inform you about the current download status::
 
-    [21:59:22] ♫ Music Bot 1: do 1 time(s)...
+    [21:59:22] ♫ Music Bot 1: do 2 time(s)...
     [21:59:22] ♫ Music Bot 1: fetch and convert
+    [21:59:23] ♫ Music Bot 1: fetch and convert
 
 - Followed by a database update::
 
@@ -57,8 +58,9 @@ Lets say you want to listen to music from Mozart...
 
 - The bot responds with::
 
-    0 The Best of Mozart _ 3 HOURS Piano Sonatas ...
+    0 Mozart for Baby (3 Hours) - ...
+    1 Mozart for Studying and ...
 
-- Now lets playl the file with::
+- Now lets play the first song in the queue with::
 
-    .play 0
+    .play first
