@@ -92,6 +92,8 @@ config:version
 
 This is for internal reasons only and is not meant to be changed.
 
+.. _settings_debug:
+
 debug
 ^^^^^
 
@@ -101,6 +103,8 @@ debug
 
 Set this to false to disable debug output in the logfile.
 
+.. _settings_language:
+
 language
 ^^^^^^^^
 
@@ -109,6 +113,8 @@ language
 * Possible values: en, de, bar
 
 Set this to the preferred language. "bar" is Bavarian.
+
+.. _settings_main_tempdir:
 
 main:tempdir
 ^^^^^^^^^^^^
@@ -124,6 +130,8 @@ For example these are the resulting directories for the Youtube plugin:
 
 - temp: ``/home/botmaster/temp/youtubeplugin/``
 - final: ``/home/botmaster/music/downloadedfromyt/``
+
+.. _settings_main_logfile:
 
 main:logfile
 ^^^^^^^^^^^^
