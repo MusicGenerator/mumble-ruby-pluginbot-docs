@@ -117,7 +117,14 @@ main:tempdir
 * Type: string
 * Default: "/home/botmaster/temp/"
 
-This is where the bot downloads new music to.
+This is the base path where the bot downloads new music to, but every plugin that downloads music adds an own subdirectory to this path.
+
+After the download the bots copies the downloaded files into the final directory definied in ``plugin:mpd:musicfolder``, also into a plugin specific folder.
+
+For example these are the resulting directories for the Youtube plugin:
+
+- temp: ``/home/botmaster/temp/youtubeplugin/``
+- final: ``/home/botmaster/music/youtubeplugin/``
 
 main:logfile
 ^^^^^^^^^^^^
@@ -356,11 +363,15 @@ plugin:bandcamp:folder:download
 * Type: string
 * Default: "downloadedfrombc/"
 
+The subdirectory the bot copies downloaded audio files into. The full path is built from ``plugin:mpd:musicfolder``+``plugin:bandcamp:folder:download``.
+
 plugin:bandcamp:folder:temp
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * Type: string
 * Default: "bandcampplugin/"
+
+The subdirectory the bot downloads new audio files into. The full path is built from ``main:tempdir``+``plugin:bandcamp:folder:temp``.
 
 plugin:bandcamp:youtube_dl:path
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
