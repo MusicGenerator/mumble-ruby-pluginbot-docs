@@ -316,7 +316,7 @@ Copy the configuration file for your local MPD::
 
     cp ~/src/mumble-ruby-pluginbot/templates/mpd.conf ~/mpd2/mpd.conf
 
-  Then open the downloaded mpd.conf file and substitude every occurence of ``mpd1`` by ``mpd2``. Also increase the port from 7701 to 7702, 7703, etc.
+  Then open the downloaded ``mpd.conf`` file and substitude every occurence of ``mpd1`` by ``mpd2``. Also increase the port from 7701 to 7702, 7703, etc.
 
 .. note::
 

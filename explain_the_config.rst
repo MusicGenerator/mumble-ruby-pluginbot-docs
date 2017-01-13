@@ -6,24 +6,24 @@ Explain the config
 Configuration files
 -------------------
 
-There is a main configuration file named config/config.yml
+There is a main configuration file named ``config/config.yml``.
 
-Also every plugin does have its own configuration file, see plugins/*.yml.
+Also every plugin does have its own configuration file, see ``plugins/*.yml``.
 
 Override configuration
 ----------------------
 
 If you start your bot on the shell without setting a specified configuration file it will use the default configuration files config/config.yml and all plugins/*yml files.
 
-If you want to use an own configuration file you don't need to write one with all configuration settings but only with those you want to change. A small sample override configuration file is available in templates/override_config.yml.
+If you want to use an own configuration file you don't need to write one with all configuration settings but only with those you want to change. A small sample override configuration file is available in ``templates/override_config.yml``.
 
-All settings that you set there will overwrite those from the default configuration file config/config.yml and also those from every single plugin configuration file (plugins/*.yml).
+All settings that you set there will overwrite those from the default configuration file ``config/config.yml`` and also those from every single plugin configuration file ``plugins/*.yml``.
 
 
 Syntax within this help
 -----------------------
 
-If we refer to a configuration option in this help text we write for example "main:tempdir" if we mean::
+If we refer to a configuration option in this help text we write for example ``main:tempdir`` if we mean::
 
     main:
         tempdir: "/home/botmaster/temp/"
