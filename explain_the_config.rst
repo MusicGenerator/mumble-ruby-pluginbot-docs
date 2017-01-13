@@ -385,3 +385,33 @@ plugin:bandcamp:to_mp3
 
 * Type: boolean
 * Default: false
+
+Ektoplazm plugin settings
+-------------------------
+
+FIXME
+
+Idle plugin settings
+--------------------
+
+FIXME
+
+Mixcloud plugin settings
+------------------------
+
+FIXME
+
+MPD plugin settings
+-------------------
+
+FIXME
+
+Soundcloud plugin settings
+--------------------------
+
+FIXME
+
+Youtube plugin settings
+-----------------------
+
+FIXME
