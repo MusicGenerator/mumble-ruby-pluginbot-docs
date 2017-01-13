@@ -81,8 +81,8 @@ The following config shows all available configuration options of the ``config.y
       password: ''
       channel: Bottest
 
-Settings
---------
+Main settings
+-------------
 
 config:version
 ^^^^^^^^^^^^^^
@@ -346,3 +346,42 @@ mumble:channel
 * Default: "Bottest"
 
 The channel the bot connects to. This is also the channel the bot tries to enter if you command it to ``.gotobed``.
+
+Bandcamp plugin settings
+------------------------
+
+plugin:bandcamp:folder:download
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: string
+* Default: "downloadedfrombc/"
+
+plugin:bandcamp:folder:temp
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: string
+* Default: "bandcampplugin/"
+
+plugin:bandcamp:youtube_dl:path
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: string
+* Default: "/home/botmaster/src/youtube-dl"
+
+plugin:bandcamp:youtube_dl:options
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: string
+* Default: ''
+
+plugin:bandcamp:youtube_dl:prefixes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: string
+* Default: ''
+
+plugin:bandcamp:to_mp3
+^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: boolean
+* Default: false
