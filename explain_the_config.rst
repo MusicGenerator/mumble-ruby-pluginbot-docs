@@ -229,16 +229,16 @@ If true the bot sets its comment to display the current music that is being play
 
 main:user:superuser
 ^^^^^^^^^^^^^^^^^^^
-You can define several superusers here. To get a users hash use the command "showhash", see "internals".
+You can define several superusers here. To get a users hash use the command ``.showhash``, see ``.internals``.
 
-The commands "reset", "set" and "settings" can only be used by the defined superusers.
+The commands ``.reset``, ``.set`` and ``.settings`` can only be used by the defined superusers.
 
 Safety Information: All predefined entries for superuser are only there to show you how it works, they will never work.
 
 
 main:user:banned
 ^^^^^^^^^^^^^^^^
-You can define several banned users here. To get a users hash use the command "showhash", see "internals".
+You can define several banned users here. To get a users hash use the command ``.showhash``, see ``.internals``.
 
 The bot will ignore the defined users completely.
 
@@ -297,7 +297,7 @@ mumble:use_vbr
 * Default: true
 * Possible values: true, false
 
-If true the bot encodes with a variable bitrate. If 0, "no" nor false it encodes with a constant bitrate.
+If true the bot encodes with a variable bitrate. If false it encodes with a constant bitrate.
 
 mumble:bitrate
 ^^^^^^^^^^^^^^
@@ -345,4 +345,4 @@ mumble:channel
 * Type: string
 * Default: "Bottest"
 
-The channel the bot connects to. This is also the channel the bot tries to enter if you command it to "gotobed".
+The channel the bot connects to. This is also the channel the bot tries to enter if you command it to ``.gotobed``.
