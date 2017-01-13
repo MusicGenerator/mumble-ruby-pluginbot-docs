@@ -72,7 +72,7 @@ And restart the bot.
 Unregistered users recognition
 ------------------------------
 
-Be aware that there is a bug in the recognition whether an unregistered user is in the channel. This is the reason why we disabled this feature ('''stop_on_unregistered_users''') earlier in this tutorial, because the bot recognizes itself as unregistered and doesn't start the music. If you didn't change the variable to false you should register your bot as an admin before starting music with the ``.play`` command.
+Be aware that there is a bug in the recognition whether an unregistered user is in the channel. This is the reason why we disabled this feature (``stop_on_unregistered_users``) earlier in this tutorial, because the bot recognizes itself as unregistered and doesn't start the music. If you didn't change the variable to false you should register your bot as an admin before starting music with the ``.play`` command.
 
 The bot does not start
 ----------------------
@@ -98,4 +98,4 @@ Replace this by your locale or use the above one. Make sure it is activated in `
 Bot does not start completely and shows plugins named false
 -----------------------------------------------------------
 
-If the .plugin command shows one or more plugins named ``false`` then you must change the setting ``plugin: mpd: testpipe`` to ``false``.
+If the ``.plugin`` command shows one or more plugins named ``false`` then you must change the configuration setting ``plugin:mpd:testpipe`` to ``false``.

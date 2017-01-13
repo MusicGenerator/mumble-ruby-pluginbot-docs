@@ -78,7 +78,7 @@ The following config shows all available configuration options of the ``config/c
       host: m.natenom.com
       port: 64738
       name: "MumbleRubyPluginbot"
-      password: ''
+      password: ""
       channel: Bottest
 
 Main settings
@@ -383,13 +383,13 @@ plugin:bandcamp:youtube_dl:options
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * Type: string
-* Default: ''
+* Default: ""
 
 plugin:bandcamp:youtube_dl:prefixes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * Type: string
-* Default: ''
+* Default: ""
 
 plugin:bandcamp:to_mp3
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -397,7 +397,7 @@ plugin:bandcamp:to_mp3
 * Type: undefined
 * Default: nil
 
-By default the bot tries to download OPUS encoded audio files or whatever is available. Set this to true to convert the audio files into MP3.
+By default the bot tries to download OPUS encoded audio files or whatever is available.
 
 Set this to true but nil in order to convert audio files into MP3.
 
