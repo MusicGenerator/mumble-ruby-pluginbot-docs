@@ -18,14 +18,14 @@ Watch log files
 
   By default the bot does a very detailed logging into ~/logs/*.log. You may use any tool to view those logs.
 
-  If debug logging is disabled you can enable it via the configuration file (main -> debug -> true).
+  If debug logging is disabled you can enable it via the debug setting, see :ref:`configexplain-label`.
 
 
 You can also watch the log files with manage.sh::
 
   ~/src/mumble-ruby-pluginbot/scripts/manage.sh log
 
-Press Ctrl + c to stop the log output.
+Press ``Ctrl + c`` to stop the log output.
 
 Running the bot without the manage.sh script
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -35,7 +35,7 @@ Running the bot without the manage.sh script
 
   rvm use @bots
 
-Now you can try to start the bot...
+Now you can try to start the bot from the shell.
 
 Bot starts and crashes and cannot connect to MPD
 ------------------------------------------------
@@ -72,7 +72,7 @@ And restart the bot.
 Unregistered users recognition
 ------------------------------
 
-Be aware that there is a bug in the recognition whether an unregistered user is in the channel. This is the reason why we disabled this feature (``stop_on_unregistered_users``) earlier in this tutorial, because the bot recognizes itself as unregistered and doesn't start the music. If you didn't change the variable to false you should register your bot as an admin before starting music with the ``.play`` command.
+Be aware that there is a bug in the recognition whether an unregistered user is in the channel. This is the reason why we disabled this feature (``main:stop_on_unregistered``) earlier in this tutorial, because the bot recognizes itself as unregistered and doesn't start the music. If you didn't change the variable to false you should register your bot as an admin before starting music with the ``.play`` command.
 
 The bot does not start
 ----------------------
