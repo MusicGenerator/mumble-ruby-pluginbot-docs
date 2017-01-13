@@ -58,8 +58,8 @@ Change bot settings so that the bot can connect to your Mumble server
 
 .. note::
 
-  - Please note that on most Mumble servers you can't use space characters in usernames; use an underscore ("_") instead.
-  - If you set the value of mumbleserver_targetchannel to "" the bot enters the default channel on the first connect and the previous channel on reconnect once he is registered.
+  - Please note that on most Mumble servers you can't use space characters in usernames; use an underscore ``_`` instead.
+  - If you set the value of mumbleserver_targetchannel to an empty string ``""`` the bot will enter the default channel on the first connect and after that the previous channel on reconnect once it is registered.
 
 
 Without GUI
@@ -73,7 +73,7 @@ Edit the bot configuration::
 
 .. image:: images/appliance/Virtualbox_appliance_mumblerubypluginbot_edit_botconf.png
 
-If you made your changes press "Ctrl + o" followed by "Enter" to save the file and then "Ctrl + x" to leave the editor.
+If you made your changes press ``Ctrl + o`` followed by ``Enter`` to save the file and then ``Ctrl + x`` to leave the editor.
 
 Now restart the virtual machine::
 
@@ -82,7 +82,7 @@ Now restart the virtual machine::
 
 .. note::
 
-  You can create a GUI flavor out of your Terminal flavor if you run the script /home/botmaster/src/.export/install_desktop.sh
+  You can create a GUI flavor out of your Terminal flavor if you run the script ``/home/botmaster/src/.export/install_desktop.sh``.
 
 
 With GUI
@@ -116,7 +116,7 @@ Have fun with your own :ref:`start-label` and `contact me`_ if you have feedback
 .. _contact me: https://www.natenom.com/
 .. _contact us: https://github.com/MusicGenerator
 
-Now register your new bot on your Mumble server and write .help to him.
+Now register your new bot on your Mumble server and write ``.help`` to it.
 
 Administration of the bot
 -------------------------
@@ -141,7 +141,7 @@ Log in as user botmaster with password botmaster and do the following::
 Stop the bot
 ^^^^^^^^^^^^
 
-To stop the bot, press the red X of the virtual machine window and choose "Send the shutdown signal" from the dialog.
+To stop the bot, press the red X of the virtual machine window and choose ``Send the shutdown signal`` from the dialog.
 
 .. image:: images/appliance/Virtualbox_appliance_mumblerubypluginbot_close_vm.png
 
