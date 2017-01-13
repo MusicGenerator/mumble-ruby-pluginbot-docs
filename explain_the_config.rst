@@ -31,7 +31,7 @@ If we refer to a configuration option in this help text we write for example ``m
 Default config/config.yml
 -------------------------
 
-The following config shows all available configuration options of the config.yml as of version 0.10.x::
+The following config shows all available configuration options of the ``config.yml`` as of version 0.10.x::
 
     ---
     config:
