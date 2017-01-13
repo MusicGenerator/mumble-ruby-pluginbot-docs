@@ -266,7 +266,7 @@ Now we copy the config file for pluginbot to a directory which doesn't interfere
 
   cp templates/override_config.yml ~/src/bot1_conf.yml
 
-This approach has the advantage that this new config file contains only the variables you want to change. All the other variables not set in your override_config.yml are used from the ~/src/mumble-ruby-pluginbot/config/pluginbot_conf.yml file.
+This approach has the advantage that this new config file contains only the variables you want to change. All the other variables not set in your bot1_conf.yml are used from the ~/src/mumble-ruby-pluginbot/config/config.yml file.
 
 You should now edit the bots configuration file named "bot1_conf.yml" with your favorite editor::
 
