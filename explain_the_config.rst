@@ -3,7 +3,26 @@
 Explain the config
 ==================
 
-The following config shows all available configuration options as of version 0.10.x::
+Configuration files
+-------------------
+
+There is a main configuration file named config/config.yml
+
+Also every plugin does have its own configuration file, see plugins/*.yml.
+
+Override configuration
+----------------------
+
+If you start your bot on the shell without setting a specified configuration file it will use the default configuration files config/config.yml and all plugins/*yml files.
+
+If you want to use an own configuration file you don't need to write one with all configuration settings but only with those you want to change. A small sample override configuration file is available in templates/override_config.yml.
+
+All settings that you set there will overwrite those from the default configuration file config/config.yml and also those from every single plugin configuration file (plugins/*.yml).
+
+Default config/config.yml
+-------------------------
+
+The following config shows all available configuration options of the config.yml as of version 0.10.x::
 
     ---
     config:
@@ -53,7 +72,6 @@ The following config shows all available configuration options as of version 0.1
       password: ''
       channel: Bottest
 
-
 Syntax within this help
 =======================
 
@@ -61,7 +79,6 @@ If we refer to a configuration option in this help text we write for example "ma
 
     main:
         tempdir: "/home/botmaster/temp/"
-
 
 Explanations
 ============
@@ -334,44 +351,3 @@ mumble:channel
 * Default: "Bottest"
 
 The channel the bot connects to. This is also the channel the bot tries to enter if you command it to "gotobed".
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  automute_if_alone: true
-  stop_on_unregistered: true
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-FIXME
