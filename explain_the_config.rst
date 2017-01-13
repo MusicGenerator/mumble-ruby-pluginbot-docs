@@ -19,6 +19,15 @@ If you want to use an own configuration file you don't need to write one with al
 
 All settings that you set there will overwrite those from the default configuration file config/config.yml and also those from every single plugin configuration file (plugins/*.yml).
 
+
+Syntax within this help
+-----------------------
+
+If we refer to a configuration option in this help text we write for example "main:tempdir" if we mean::
+
+    main:
+        tempdir: "/home/botmaster/temp/"
+
 Default config/config.yml
 -------------------------
 
@@ -72,19 +81,11 @@ The following config shows all available configuration options of the config.yml
       password: ''
       channel: Bottest
 
-Syntax within this help
-=======================
-
-If we refer to a configuration option in this help text we write for example "main:tempdir" if we mean::
-
-    main:
-        tempdir: "/home/botmaster/temp/"
-
-Explanations
-============
+Settings
+--------
 
 config:version
---------------
+^^^^^^^^^^^^^^
 
 * Type: boolean
 * Default: true
@@ -93,7 +94,7 @@ config:version
 This is for internal reasons only and is not meant to be changed.
 
 debug
------
+^^^^^
 
 * Type: boolean
 * Default: true
@@ -102,16 +103,13 @@ debug
 Set this to false to disable debug output in the logfile.
 
 language
---------
+^^^^^^^^
 
 * Type: string
 * Default: en
 * Possible values: en, de, bar
 
 Set this to the preferred language. "bar" is Bavarian.
-
-main
-----
 
 main:tempdir
 ^^^^^^^^^^^^
@@ -291,9 +289,6 @@ main:blacklisted_commands
 * Default: ""
 
 Here you can disable specific commands. Be aware that currently the bot checks this very stupid. That means that it checks only the beginning of a word. For example if you blacklist set then settings is also blacklisted.
-
-mumble
-------
 
 mumble:use_vbr
 ^^^^^^^^^^^^^^
