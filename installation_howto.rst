@@ -16,7 +16,7 @@ How much time will you need?
 
 This tutorial works well using copy and paste if you want one bot only. If you want more bots, read the note boxes and warning boxes :)
 
-After ~20 minutes it should be finished, depending on your servers internet connection.
+After 10 to 20 minutes it should be finished, depending on your servers internet connection.
 
 How will it look like?
 ----------------------
