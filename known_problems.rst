@@ -18,7 +18,7 @@ Watch log files
 
   By default the bot does a very detailed logging into ~/logs/*.log. You may use any tool to view those logs.
 
-  If debug logging is disabled you can enable it via the debug setting, see :ref:`configexplain-label`.
+  If debug logging is disabled you can enable it via the debug setting, see :ref:`here <configexplain-label>`.
 
 
 You can also watch the log files with manage.sh::
