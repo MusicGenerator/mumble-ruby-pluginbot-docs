@@ -410,29 +410,103 @@ Set this to true but nil in order to convert audio files into MP3.
 Ektoplazm plugin settings
 -------------------------
 
-FIXME
+plugin:ektoplazm:prefixes
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: string
+* Default: ""
+
+plugin:ektoplazm:folder:download
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: string
+* Default: "ektoplazm/"
+
+The subdirectory the bot copies downloaded audio files into. The full path is built from ``plugin:mpd:musicfolder+plugin:ektoplazm:folder:download``.
+
+plugin:ektoplazm:folder:temp
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: string
+* Default: "ektoplazmplugin/"
+
+The subdirectory the bot downloads new audio files into. The full path is built from ``main:tempdir+plugin:ektoplazm:folder:temp``.
 
 Idle plugin settings
 --------------------
 
-FIXME
+plugin:idle:maxidletime
+^^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: int
+* Default: 600
+
+Time in seconds the bot can idle before doing an action, see ``plugin:idle:action``.
+
+plugin:idle:action
+^^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: string
+* Default: "channel"
+* Possible values: "channel", "deafen"
+
+If "channel" the bot enters its home channel when being idle longer than ``plugin:idle:maxidletime``.
 
 Mixcloud plugin settings
 ------------------------
 
-FIXME
+plugin:
+  mixcloud:
+    folder:
+      download: downloadedfrommc/
+      temp: mixcloudplugin/
+    youtube_dl:
+      path: "/home/botmaster/src/youtube-dl"
+      options: '--external-downloader aria2c --external-downloader-args "-j 6 -k 1M -x 10"'
+      prefixes: ''
+    to_mp3:
 
 MPD plugin settings
 -------------------
 
-FIXME
+plugin:
+  mpd:
+    testpipe: true
+    volume: 65
+    host: localhost
+    port: 7701
+    musicfolder: "/home/botmaster/music/"
+    template:
+      comment:
+        disabled: "<b>Artist: </b>DISABLED<br /><b>Title: </b>DISABLED<br/><b>Album: </b>DISABLED<br /><br /><b>Write %shelp to me, to get a list of my commands!"
+        enabled:  "<b>Artist: </b>%s<br /><b>Title: </b>%s<br /><b>Album: </b>%s<br /><br /><b>Write %shelp to me, to get a list of my commands!</b>"
 
 Soundcloud plugin settings
 --------------------------
 
-FIXME
+plugin:
+  soundcloud:
+    folder:
+      download: downloadedfromsc/
+      temp: soundcloudplugin/
+    youtube_dl:
+      path: "/home/botmaster/src/youtube-dl"
+      options: ''
+      prefixes: ''
+    to_mp3:
 
 Youtube plugin settings
 -----------------------
 
-FIXME
+plugin:
+  youtube:
+    folder:
+      download: downloadedfromyt/
+      temp: youtubeplugin/
+    stream:
+    youtube_dl:
+      path: "/home/botmaster/src/youtube-dl"
+      options: ''
+      prefixes: ''
+      maxresults: 200
+    to_mp3:
