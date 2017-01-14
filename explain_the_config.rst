@@ -249,7 +249,6 @@ The commands ``.reset``, ``.set`` and ``.settings`` can only be used by the defi
 
 Safety Information: All predefined entries for superuser are only there to show you how it works, they will never work.
 
-
 main:user:banned
 ^^^^^^^^^^^^^^^^
 You can define several banned users here. To get a users hash use the command ``.showhash``, see ``.internals``.
@@ -258,11 +257,9 @@ The bot will ignore the defined users completely.
 
 Safety Information: All predefined entries for banned users are only there to show you how it works, they will never work.
 
-
 main:user:bound
 ^^^^^^^^^^^^^^^
 Only ONE user hash as a string. If definied nobody will be able to use the bind command anymore but the defined user. The blacklist command can only be used after being bound.
-
 
 main:certfolder
 ^^^^^^^^^^^^^^^
@@ -345,7 +342,7 @@ mumble:name
 * Type: string
 * Default: "MumbleRubyPluginbot"
 
-The name of your bot. Be aware that on most servers you are not allowed to use white spaces or other special characters.
+The name of your bot. Be aware that on most Mumble servers you are not allowed to use white spaces or other special characters.
 
 mumble:password
 ^^^^^^^^^^^^^^^
