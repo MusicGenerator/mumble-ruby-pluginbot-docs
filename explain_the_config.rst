@@ -270,7 +270,7 @@ main:certfolder
 * Type: string
 * Default: "/home/botmaster/certs/"
 
-In this folder the bot automatically creates an openssl certificate per username you set up. See mumble: name.
+In this folder the bot automatically creates an openssl certificate per :ref:`Mumble username <settings_mumble_name>` you set up.
 
 main:fifo
 ^^^^^^^^^
@@ -336,6 +336,8 @@ mumble:port
 * Default: 64738
 
 The port of the Mumble server your bot connects to.
+
+.. _settings_mumble_name:
 
 mumble:name
 ^^^^^^^^^^^
