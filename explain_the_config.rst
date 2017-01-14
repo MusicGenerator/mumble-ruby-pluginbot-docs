@@ -1,7 +1,7 @@
 .. _configexplain-label:
 
-Explain the config
-==================
+Explain the configs
+===================
 
 Configuration files
 -------------------
@@ -10,15 +10,12 @@ There is a main configuration file named ``config/config.yml``.
 
 Also every plugin does have its own configuration file, see ``plugins/*.yml``.
 
-Override configuration
-----------------------
+Default configuration and override configuration
+------------------------------------------------
 
-If you start your bot on the shell without setting a specified configuration file it will use the default configuration files ``config/config.yml`` and all ``plugins/*yml`` files.
+The bot always reads the default configuration files from ``config/config.yml`` and all plugin configuration files from ``plugins/*yml``.
 
-If you want to use an own configuration file you don't need to write one with all configuration settings but only with those you want to change. A small sample override configuration file is available in ``templates/override_config.yml``.
-
-All settings that you set there will overwrite those from the default configuration file ``config/config.yml`` and also those from every single plugin configuration file ``plugins/*.yml``.
-
+If you want to use an own configuration file you don't need to write one with all configuration settings but only with those you want to change. A small sample override configuration file is available in ``templates/override_config.yml``. All settings that you set there will overwrite those from the default configuration file ``config/config.yml`` and also those from every single plugin configuration file ``plugins/*.yml``.
 
 Syntax within this help
 -----------------------
@@ -27,6 +24,19 @@ If we refer to a configuration option in this help text we write for example ``m
 
     main:
         tempdir: "/home/botmaster/temp/"
+
+Notes for editing the configuration
+-----------------------------------
+
+The documentation uses the YAML syntax, that means that it is based on indentation by space characters.
+
+When you write a **string** you can enclose it in double quotes::
+
+    "--external-downloader aria2c"
+
+Enclose the string into single quotes if you want to use double quotest within a string::
+
+    '--external-downloader aria2c --external-downloader-args "-j 6 -k 1M -x 10"'
 
 Default config/config.yml
 -------------------------
@@ -249,6 +259,11 @@ The commands ``.reset``, ``.set`` and ``.settings`` can only be used by the defi
 
 Safety Information: All predefined entries for superuser are only there to show you how it works, they will never work.
 
+Example::
+
+    72x60721xx216x4xx017f3x1x476d4358x48x648: dafoxia
+
+
 main:user:banned
 ^^^^^^^^^^^^^^^^
 You can define several banned users here. To get a users hash use the command ``.showhash``, see ``.internals``.
@@ -256,6 +271,10 @@ You can define several banned users here. To get a users hash use the command ``
 The bot will ignore the defined users completely.
 
 Safety Information: All predefined entries for banned users are only there to show you how it works, they will never work.
+
+Example::
+
+    123452342348234782937ckjfvo32ckj20938473: user3
 
 main:user:bound
 ^^^^^^^^^^^^^^^
@@ -455,58 +474,205 @@ If "channel" the bot enters its home channel when being idle longer than ``plugi
 Mixcloud plugin settings
 ------------------------
 
-plugin:
-  mixcloud:
-    folder:
-      download: downloadedfrommc/
-      temp: mixcloudplugin/
-    youtube_dl:
-      path: "/home/botmaster/src/youtube-dl"
-      options: '--external-downloader aria2c --external-downloader-args "-j 6 -k 1M -x 10"'
-      prefixes: ''
-    to_mp3:
+plugin:mixcloud:folder:download
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: string
+* Default: "downloadedfrommc/"
+
+The subdirectory the bot copies downloaded audio files into. The full path is built from ``plugin:mpd:musicfolder+plugin:mixcloud:folder:download``.
+
+plugin:mixcloud:folder:temp
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: string
+* Default: "mixcloudplugin/"
+
+The subdirectory the bot downloads new audio files into. The full path is built from ``main:tempdir+plugin:mixcloud:folder:temp``.
+
+plugin:mixcloud:youtube_dl:path
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: string
+* Default: "/home/botmaster/src/youtube-dl"
+
+plugin:mixcloud:youtube_dl:options
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: string
+* Default: '--external-downloader aria2c --external-downloader-args "-j 6 -k 1M -x 10"'
+
+plugin:mixcloud:youtube_dl:prefixes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: string
+* Default: ""
+
+plugin:mixcloud:to_mp3
+^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: undefined
+* Default: nil
+
+By default the bot tries to download OPUS encoded audio files or whatever is available.
+
+Set this to true but nil in order to convert audio files into MP3.
 
 MPD plugin settings
 -------------------
 
-plugin:
-  mpd:
-    testpipe: true
-    volume: 65
-    host: localhost
-    port: 7701
-    musicfolder: "/home/botmaster/music/"
-    template:
-      comment:
-        disabled: "<b>Artist: </b>DISABLED<br /><b>Title: </b>DISABLED<br/><b>Album: </b>DISABLED<br /><br /><b>Write %shelp to me, to get a list of my commands!"
-        enabled:  "<b>Artist: </b>%s<br /><b>Title: </b>%s<br /><b>Album: </b>%s<br /><br /><b>Write %shelp to me, to get a list of my commands!</b>"
+plugin:mpd:testpipe
+^^^^^^^^^^^^^^^^^^^
+
+* Type: boolean
+* Default: true
+* Possible values: true, false
+
+When this is set to true the bot will test whether MPD is running before it continues to start fully.
+
+.. note::
+
+  On some systems this may fail and cause the bot to show several plugins named "false" when you use the command ``.plugins``; set this value to ``false`` in such a case.
+
+plugin:mpd:volume
+^^^^^^^^^^^^^^^^^
+
+* Type: int
+* Default: 65
+* Value range: 0 to 100
+
+The default volume in % when the bot starts.
+
+plugin:mpd:host
+^^^^^^^^^^^^^^^
+
+* Type: string
+* Default: localhost
+
+The host where your MPD server is running on.
+
+plugin:mpd:port
+^^^^^^^^^^^^^^^
+
+* Type: int
+* Default: 65
+
+The port your MPD server is reachable at.
+
+plugin:mpd:musicfolder
+^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: string
+* Default: "/home/botmaster/music/"
+
+plugin:mpd:template:comment:disabled
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: string
+* Default: "<b>Artist: </b>DISABLED<br /><b>Title: </b>DISABLED<br/><b>Album: </b>DISABLED<br /><br /><b>Write %shelp to me, to get a list of my commands!"
+
+plugin:mpd:template:comment:enabled
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: string
+* Default: "<b>Artist: </b>%s<br /><b>Title: </b>%s<br /><b>Album: </b>%s<br /><br /><b>Write %shelp to me, to get a list of my commands!</b>"
 
 Soundcloud plugin settings
 --------------------------
 
-plugin:
-  soundcloud:
-    folder:
-      download: downloadedfromsc/
-      temp: soundcloudplugin/
-    youtube_dl:
-      path: "/home/botmaster/src/youtube-dl"
-      options: ''
-      prefixes: ''
-    to_mp3:
+plugin:soundcloud:folder:download
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: string
+* Default: "downloadedfromsc/"
+
+The subdirectory the bot copies downloaded audio files into. The full path is built from ``plugin:mpd:musicfolder+plugin:soundcloud:folder:download``.
+
+plugin:soundcloud:folder:temp
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: string
+* Default: "soundcloudplugin/"
+
+The subdirectory the bot downloads new audio files into. The full path is built from ``main:tempdir+plugin:soundcloud:folder:temp``.
+
+plugin:soundcloud:youtube_dl:path
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: string
+* Default: "/home/botmaster/src/youtube-dl"
+
+plugin:soundcloud:youtube_dl:options
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: string
+* Default: ""
+
+plugin:soundcloud:youtube_dl:prefixes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: string
+* Default: ""
+
+plugin:soundcloud:to_mp3
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: undefined
+* Default: nil
+
+By default the bot tries to download OPUS encoded audio files or whatever is available.
+
+Set this to true but nil in order to convert audio files into MP3.
 
 Youtube plugin settings
 -----------------------
 
-plugin:
-  youtube:
-    folder:
-      download: downloadedfromyt/
-      temp: youtubeplugin/
-    stream:
-    youtube_dl:
-      path: "/home/botmaster/src/youtube-dl"
-      options: ''
-      prefixes: ''
-      maxresults: 200
-    to_mp3:
+plugin:youtube:folder:download
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: string
+* Default: "downloadedfromyt/"
+
+The subdirectory the bot copies downloaded audio files into. The full path is built from ``plugin:mpd:musicfolder+plugin:youtube:folder:download``.
+
+plugin:youtube:folder:temp
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: string
+* Default: "youtubeplugin/"
+
+The subdirectory the bot downloads new audio files into. The full path is built from ``main:tempdir+plugin:youtube:folder:temp``.
+
+plugin:youtube:youtube_dl:path
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: string
+* Default: "/home/botmaster/src/youtube-dl"
+
+plugin:youtube:youtube_dl:options
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: string
+* Default: ""
+
+plugin:youtube:youtube_dl:prefixes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: string
+* Default: ""
+
+plugin:youtube:youtube_dl:maxresults
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: int
+* Default: 200
+
+plugin:youtube:to_mp3
+^^^^^^^^^^^^^^^^^^^^^
+
+* Type: undefined
+* Default: nil
+
+By default the bot tries to download OPUS encoded audio files or whatever is available.
+
+Set this to true but nil in order to convert audio files into MP3.
