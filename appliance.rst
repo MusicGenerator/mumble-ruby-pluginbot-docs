@@ -53,17 +53,29 @@ Now start the virtual machine and login.
 - The username is: botmaster
 - The password is: botmaster
 
-Change bot settings so that the bot can connect to your Mumble server
----------------------------------------------------------------------
+General notes
+-------------
 
 .. note::
 
   - Please note that on most Mumble servers you can't use space characters in usernames; use an underscore ``_`` instead.
   - If you set the value of mumbleserver_targetchannel to an empty string ``""`` the bot will enter the default channel on the first connect and after that the previous channel on reconnect once it is registered.
 
+.. _appliance_with_shell-label:
 
-Without GUI
-^^^^^^^^^^^
+Virtual Appliance with Shell only
+---------------------------------
+
+Your bot is already running and by default connected to `Natenoms Mumble-Server`_. To let it connect to your own server you must now adapt the bots configuration and then restart the bot or just restart the complete virtual machine.
+
+.. _Natenoms Mumble-Server: https://www.natenom.com/mymumbleserver/
+
+.. note::
+
+  You can create a GUI flavor out of your Terminal flavor if you run the script ``/home/botmaster/src/.export/install_desktop.sh``.
+
+Change bot settings so that the bot can connect to your Mumble server
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 .. image:: images/appliance/Virtualbox_appliance_mumblerubypluginbot_login.png
 
@@ -75,18 +87,12 @@ Edit the bot configuration::
 
 If you made your changes press ``Ctrl + o`` followed by ``Enter`` to save the file and then ``Ctrl + x`` to leave the editor.
 
-Now restart the virtual machine::
+Now restart the virtual machine with ``reboot``.
 
-  reboot
+.. _appliance_with_gui-label:
 
-
-.. note::
-
-  You can create a GUI flavor out of your Terminal flavor if you run the script ``/home/botmaster/src/.export/install_desktop.sh``.
-
-
-With GUI
-^^^^^^^^
+Virtual Appliance with GUI
+--------------------------
 
 .. image:: images/appliance/Virtualbox_appliance_mumblerubypluginbot_login_gui.png
 
