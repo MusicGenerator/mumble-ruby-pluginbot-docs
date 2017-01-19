@@ -221,7 +221,7 @@ main:whitelist_enabled
 * Default: false
 * Possible values: true, false
 
-If true then only users from the :ref:`whitelist <label__settings__main-user-whitelisted>` can control the bot.
+If true then only :ref:`whitelisted <label__settings__main-user-whitelisted>` can control the bot.
 
 :ref:`Superusers <label__settings__main-user-superuser>` are treated as if they were on the whitlist.
 
@@ -276,7 +276,7 @@ You can define several whitelisted users here. To get a users hash use the comma
 
 Safety Information: All predefined entries for superuser are only there to show you how it works, they will never work.
 
-Note that :ref:`<main:whitelist_enabled> label__settings__main-whitelist_enabled` must be set to true in order for this to work.
+Note that :ref:`main:whitelist_enabled <label__settings__main-whitelist_enabled>` must be set to true in order for this to work.
 
 Example::
 
