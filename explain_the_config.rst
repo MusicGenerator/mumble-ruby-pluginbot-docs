@@ -223,7 +223,7 @@ main:whitelist_enabled
 
 If true then only :ref:`whitelisted <label__settings__main-user-whitelisted>` can control the bot.
 
-:ref:`Superusers <label__settings__main-user-superuser>` are treated as if they were on the whitlist.
+:ref:`Superusers <label__settings__main-user-superuser>` are treated as if they were on the whitelist.
 
 main:control:string
 ^^^^^^^^^^^^^^^^^^^
