@@ -452,8 +452,8 @@ plugin:bandcamp:youtube_dl:prefixes
 plugin:bandcamp:to_mp3
 ^^^^^^^^^^^^^^^^^^^^^^
 
-* Type: undefined
-* Default: nil
+* Type: boolean
+* Default: false
 
 By default the bot tries to download OPUS encoded audio files or whatever is available.
 
@@ -544,8 +544,8 @@ plugin:mixcloud:youtube_dl:prefixes
 plugin:mixcloud:to_mp3
 ^^^^^^^^^^^^^^^^^^^^^^
 
-* Type: undefined
-* Default: nil
+* Type: boolean
+* Default: false
 
 By default the bot tries to download OPUS encoded audio files or whatever is available.
 
@@ -650,8 +650,8 @@ plugin:soundcloud:youtube_dl:prefixes
 plugin:soundcloud:to_mp3
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Type: undefined
-* Default: nil
+* Type: boolean
+* Default: false
 
 By default the bot tries to download OPUS encoded audio files or whatever is available.
 
@@ -703,8 +703,8 @@ plugin:youtube:youtube_dl:maxresults
 plugin:youtube:to_mp3
 ^^^^^^^^^^^^^^^^^^^^^
 
-* Type: undefined
-* Default: nil
+* Type: boolean
+* Default: false
 
 By default the bot tries to download OPUS encoded audio files or whatever is available.
 
