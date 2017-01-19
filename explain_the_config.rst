@@ -58,6 +58,7 @@ The following config shows all available configuration options of the ``config/c
       stop_on_unregistered: true
       channel_notify: 0
       controllable: true
+      whitelist_enabled: false
       control:
         string: "."
         message:
@@ -68,6 +69,9 @@ The following config shows all available configuration options of the ``config/c
         comment:
           set: true
       user:
+        whitelisted:
+          72x60721xx216x4xx017f3x1x476d4358x48x648: dafoxia
+          1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ1234: anotheruser
         superuser:
           72x60721xx216x4xx017f3x1x476d4358x48x648: dafoxia
           1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ1234: anotheruser
@@ -208,6 +212,19 @@ main:controllable
 
 Bot is only controllable if this is set to true. If false it will ignore all text commands.
 
+.. _label__settings__main-whitelist_enabled:
+
+main:whitelist_enabled
+^^^^^^^^^^^^^^^^^^^^^^
+
+* Type: boolean
+* Default: false
+* Possible values: true, false
+
+If true then only users from the :ref:`whitelist <label__settings__main-user-whitelisted>` can control the bot.
+
+:ref:`superuers <label__settings__main-user-superuser>` are treated as if they were on the whitlist.
+
 main:control:string
 ^^^^^^^^^^^^^^^^^^^
 
@@ -250,6 +267,22 @@ main:display:comment:set
 * Possible values: true, false
 
 If true the bot sets its comment to display the current music that is being played.
+
+.. _label__settings__main-user-whitelisted:
+
+main:user:whitelisted
+^^^^^^^^^^^^^^^^^^^^^
+You can define several whitelisted users here. To get a users hash use the command ``.showhash``, see ``.internals``.
+
+Safety Information: All predefined entries for superuser are only there to show you how it works, they will never work.
+
+Note that :ref:`label__settings__main-whitelist_enabled` must be set to true in order for this to work.
+
+Example::
+
+    72x60721xx216x4xx017f3x1x476d4358x48x648: dafoxia
+
+.. _label__settings__main-user-superuser:
 
 main:user:superuser
 ^^^^^^^^^^^^^^^^^^^
