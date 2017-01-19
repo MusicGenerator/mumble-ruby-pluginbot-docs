@@ -268,8 +268,6 @@ main:user:whitelisted
 ^^^^^^^^^^^^^^^^^^^^^
 You can define several whitelisted users here. To get a users hash use the command ``.showhash``, see ``.internals``.
 
-Safety Information: All predefined entries for superuser are only there to show you how it works, they will never work.
-
 Note that :ref:`main:whitelist_enabled <label__settings__main-whitelist_enabled>` must be set to true in order for this to work.
 
 Example::
@@ -285,8 +283,6 @@ You can define several superusers here. To get a users hash use the command ``.s
 
 The commands ``.reset``, ``.set`` and ``.settings`` can only be used by the defined superusers.
 
-Safety Information: All predefined entries for superuser are only there to show you how it works, they will never work.
-
 Example::
 
     superuser:
@@ -297,8 +293,6 @@ main:user:banned
 You can define several banned users here. To get a users hash use the command ``.showhash``, see ``.internals``.
 
 The bot will ignore the defined users completely.
-
-Safety Information: All predefined entries for banned users are only there to show you how it works, they will never work.
 
 Example::
 
