@@ -457,7 +457,7 @@ plugin:bandcamp:to_mp3
 
 By default the bot tries to download OPUS encoded audio files or whatever is available.
 
-Set this to true but nil in order to convert audio files into MP3.
+Set this to true in order to convert audio files into MP3.
 
 Ektoplazm plugin settings
 -------------------------
@@ -549,7 +549,7 @@ plugin:mixcloud:to_mp3
 
 By default the bot tries to download OPUS encoded audio files or whatever is available.
 
-Set this to true but nil in order to convert audio files into MP3.
+Set this to true in order to convert audio files into MP3.
 
 MPD plugin settings
 -------------------
@@ -655,7 +655,7 @@ plugin:soundcloud:to_mp3
 
 By default the bot tries to download OPUS encoded audio files or whatever is available.
 
-Set this to true but nil in order to convert audio files into MP3.
+Set this to true in order to convert audio files into MP3.
 
 Youtube plugin settings
 -----------------------
@@ -708,4 +708,4 @@ plugin:youtube:to_mp3
 
 By default the bot tries to download OPUS encoded audio files or whatever is available.
 
-Set this to true but nil in order to convert audio files into MP3.
+Set this to true in order to convert audio files into MP3.
