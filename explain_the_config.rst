@@ -45,7 +45,7 @@ The following config shows all available configuration options of the ``config/c
 
     ---
     config:
-      version: 2.1
+      version: 2.2
 
     debug: true
     language: en
