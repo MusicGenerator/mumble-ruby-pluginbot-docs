@@ -362,7 +362,7 @@ mumble:bitrate
 * Type: int
 * Default: 72000
 
-The overall bandwidth the bot is allowed to use. Please note that the bot is able to ask the server for its maximum bandwidth and so can reduce its bitrate if you set it higher than possible.
+The overall bandwidth in bits per second the bot is allowed to use. Please note that the bot is able to ask the server for its maximum bandwidth and so can reduce its bitrate if you set it higher than possible.
 
 mumble:host
 ^^^^^^^^^^^
