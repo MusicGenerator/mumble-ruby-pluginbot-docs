@@ -13,6 +13,7 @@ Features
 - Audio ducking – the bot lowers the playback volume if a user speaks.
 - Supports both CELT and Opus codec for maximum compatibility even on old Mumble servers <1.2.4.
 - No need for a web interfaces to control the bot. Everything can be done with text commands on your Mumble server.
+- Support for whitelist of users who are only able to control the bot. Superusers are treated as being on the whitelist automatically.
 
 For a complete list of features you must try the bot yourself. Write ``.help`` to your own bot and have fun :)
 
