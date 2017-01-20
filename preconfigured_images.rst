@@ -3,6 +3,13 @@
 Pre configured system images
 ============================
 
+.. note::
+
+    We do not rebuild these images for every patchlevel update, so please run the updater once after installing the image.
+
+    The updater is located in ``~/src/mumble-ruby-pluginbot/scripts/updater.sh``.
+
+
 Login credentials for all images
 --------------------------------
 
