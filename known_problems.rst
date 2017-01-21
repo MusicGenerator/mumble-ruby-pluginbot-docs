@@ -42,7 +42,7 @@ MPD versions that cause problems
 
 The following MPD versions cause problems and should be avoided:
 
-- 0.19.12 in Debian 8 crashes on AAC format radio streams.
+- 0.19.1 in Debian 8 crashes on AAC format radio streams.
 - 0.20.1 causes loud noise/slow playback after songchange, see `here`__.
 
 __ https://www.musicpd.org/news/2017/01/mpd-0-20-2-released/
