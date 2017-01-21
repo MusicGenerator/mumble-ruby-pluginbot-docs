@@ -128,7 +128,7 @@ Administration of the bot
 -------------------------
 
 Set up keyboard
-^^^^^^^^^^^^^^^
+:::::::::::::::
 
 The keyboard is set to german layout (de:nodeadkeys); to change it run::
 
@@ -136,16 +136,8 @@ The keyboard is set to german layout (de:nodeadkeys); to change it run::
 
 Then reboot the virtual machine.
 
-Update the bot
-^^^^^^^^^^^^^^
-
-Log in as user botmaster with password botmaster and do the following::
-
-  /home/botmaster/src/mumble-ruby-pluginbot/scripts/updater.sh
-  reboot
-
 Stop the bot
-^^^^^^^^^^^^
+::::::::::::
 
 To stop the bot, press the red X of the virtual machine window and choose ``Send the shutdown signal`` from the dialog.
 
@@ -156,15 +148,25 @@ Information about the appliance
 
 This is just for your information, no need to do anything here.
 
-Auto update
-^^^^^^^^^^^
+Autoupdate
+::::::::::
 
 The appliance does an auto update of the Mumble-Ruby-Pluginbot – the main compoment of the appliance – on every start.
 
 If you want to disable this function please remove it from ``/etc/rc.local``.
 
+Manual update
+:::::::::::::
+
+Log in as user botmaster with password botmaster and do the following::
+
+    /home/botmaster/src/mumble-ruby-pluginbot/scripts/updater.sh
+    reboot
+
+
 VirtualBox configuration
-^^^^^^^^^^^^^^^^^^^^^^^^
+::::::::::::::::::::::::
+
 - System partition: 5 GB (dynamic size)
 - Home partition: 100 GB (dynamic size, it grows up to that size when you download songs)
 - No swap partition is available.
@@ -176,7 +178,7 @@ VirtualBox configuration
 .. _fstrim: https://wiki.archlinux.org/index.php/Solid_State_Drives#Apply_periodic_TRIM_via_fstrim
 
 System settings
-^^^^^^^^^^^^^^^
+:::::::::::::::
 
 - System: Ubuntu Server 16.04 LTS 64bit
 - Hostname: mumblerubypluginbot
@@ -184,7 +186,7 @@ System settings
 - SSH: Not installed at all, for security reasons :)
 
 User credentials
-^^^^^^^^^^^^^^^^
+::::::::::::::::
 
 - Username: botmaster
 - Password: botmaster
