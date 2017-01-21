@@ -143,11 +143,6 @@ To stop the bot, press the red X of the virtual machine window and choose ``Send
 
 .. image:: images/appliance/Virtualbox_appliance_mumblerubypluginbot_close_vm.png
 
-Information about the appliance
--------------------------------
-
-This is just for your information, no need to do anything here.
-
 Autoupdate
 ::::::::::
 
@@ -163,6 +158,10 @@ Log in as user botmaster with password botmaster and do the following::
     /home/botmaster/src/mumble-ruby-pluginbot/scripts/updater.sh
     reboot
 
+Information about the appliance
+-------------------------------
+
+This is just for your information, no need to do anything here.
 
 VirtualBox configuration
 ::::::::::::::::::::::::
