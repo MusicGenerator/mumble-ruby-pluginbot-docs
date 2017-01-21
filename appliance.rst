@@ -156,6 +156,13 @@ Information about the appliance
 
 This is just for your information, no need to do anything here.
 
+Auto update
+^^^^^^^^^^^
+
+The appliance does an auto update of the Mumble-Ruby-Pluginbot – the main compoment of the appliance – on every start.
+
+If you want to disable this function please remove it from ``/etc/rc.local``.
+
 VirtualBox configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^
 - System partition: 5 GB (dynamic size)
