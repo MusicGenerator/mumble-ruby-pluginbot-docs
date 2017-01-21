@@ -298,9 +298,11 @@ The rest of the configuration file should be fine.
     cd ~/src/mumble-ruby-pluginbot
     cp templates/override_config.yml ~/src/bot2_conf.yml
 
-  Then edit ~/src/bot2_conf.yml and change the folowing variables:
+  Now edit ~/src/bot2_conf.yml and change at least the following variables:
 
+  - main -> logfile to "/home/botmaster/logs/bot2.log", and so forth
   - main -> fifo to "/home/botmaster/mpd2/mpd.fifo", and so forth
+  - mumble -> name to "anything different then for bot1", and so forth
   - plugin -> mpd -> port to 7702, and so forth
 
 Set up MPD (Music Player Daemon)
