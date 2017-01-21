@@ -96,7 +96,7 @@ config:version
 ^^^^^^^^^^^^^^
 
 * Type: float
-* Default: 2.1
+* Default: 2.2
 
 This is for internal reasons only and is not meant to be changed.
 
