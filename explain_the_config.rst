@@ -10,6 +10,9 @@ There is a main configuration file named ``config/config.yml``.
 
 Also every plugin does have its own configuration file, see ``plugins/*.yml``.
 
+
+.. _label-configexplain_override_and_main_config:
+
 Default configuration and override configuration
 ------------------------------------------------
 
