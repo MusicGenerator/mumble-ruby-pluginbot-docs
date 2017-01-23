@@ -14,9 +14,13 @@ A good start for learning to control the bot is::
 
 .. note::
 
-  If you are really excited and want to know all the commands available then try the command::
+  If you are really excited and want to know all the commands available then try the commands::
 
       .help all
+
+  and::
+
+      .internals
 
 
 But first you need the bot to come into your channel, that is done with::
