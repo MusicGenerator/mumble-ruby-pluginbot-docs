@@ -3,26 +3,34 @@
 Usage
 =====
 
-The bot reacts to text commands, prefixed with a control string.
+Basic overview
+--------------
 
-.. note::
-
-  The default control string is a dot ``.``
+The bot reacts to text commands, prefixed with a control string. The default control string is a dot ``.``
 
 A good start for learning to control the bot is::
 
     .help
 
+But first you need the bot to come into your channel, that is done with::
+
+    .ch
+
+which is a command of the Control plugin, see::
+
+        .help control
+
 The basic music related commands you need for volume control, skip forward/backward, select the title to play, etc. are located in the MPD plugin. If you don't want to download new music this is basically all that you need. To get the help of this plugin write to the bot::
 
     .help mpd
 
-.. seealso::
+If there is no music in the bot yet you need to download some, see for example :ref:`label-usage_example_4`. But there are other plugins, too, which are able to download new music, see :ref:`Plugins of Mumble-Ruby-Pluginbot <plugins-label>`.
 
-    See also :ref:`Plugins of Mumble-Ruby-Pluginbot <plugins-label>`.
+Usage examples
+--------------
 
 Example 1 – Volume control
---------------------------
+::::::::::::::::::::::::::
 
 The music is playing but you want to lower the volume, lets say the current volume is 65% and you want to lower it to 50%, you may do::
 
@@ -35,7 +43,7 @@ Every ``-`` after the ``.v`` command (note that there is no space character) mea
 Write ``.help mpd`` to the bot for details.
 
 Example 2 – Change state
-------------------------
+::::::::::::::::::::::::
 
 The bot takes its music from a queue. To show the current queue use the command ``.queue``.
 
@@ -46,7 +54,7 @@ Use the command ``.play 5`` to play the 5th song in the list. Note that the firs
 Write ``.help mpd`` to the bot for details.
 
 Example 3 – Listen to a radio station
--------------------------------------
+:::::::::::::::::::::::::::::::::::::
 
 First you must tell the bot to download/update the list of known radion stations with ``.radioupdate``.
 
@@ -62,8 +70,10 @@ In order to do so use the command ``.choose`` and the bot will show a list of th
 
 Yeay, it is not very user friendly currently but you have the ability to choose between thousands of radio streams and thats fantastic :)
 
+.. _label-usage_example_4:
+
 Example 4 – Download music from Youtube
----------------------------------------
+:::::::::::::::::::::::::::::::::::::::
 
 Lets say you want to listen to music from Mozart...
 
