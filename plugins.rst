@@ -35,6 +35,8 @@ Usage::
 
   .help bandcamp
 
+.. _label_plugins_control:
+
 Control
 ^^^^^^^
 This plugin provides some nice commands like automute, follow, ...
@@ -74,6 +76,8 @@ This plugin can download music from Mixcloud.
 Usage::
 
   .help mixcloud
+
+.. _label_plugins_mpd:
 
 Mpd
 ^^^
