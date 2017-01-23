@@ -440,6 +440,8 @@ plugin:bandcamp:youtube_dl:options
 * Type: string
 * Default: ""
 
+.. include:: includes/youtube_dl_options.rst
+
 plugin:bandcamp:youtube_dl:prefixes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -533,6 +535,8 @@ plugin:mixcloud:youtube_dl:options
 
 * Type: string
 * Default: '--external-downloader aria2c --external-downloader-args "-j 6 -k 1M -x 10"'
+
+.. include:: includes/youtube_dl_options.rst
 
 plugin:mixcloud:youtube_dl:prefixes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -642,6 +646,8 @@ plugin:soundcloud:youtube_dl:options
 * Type: string
 * Default: ""
 
+.. include:: includes/youtube_dl_options.rst
+
 plugin:soundcloud:youtube_dl:prefixes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -690,6 +696,8 @@ plugin:youtube:youtube_dl:options
 
 * Type: string
 * Default: ""
+
+.. include:: includes/youtube_dl_options.rst
 
 plugin:youtube:youtube_dl:prefixes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
