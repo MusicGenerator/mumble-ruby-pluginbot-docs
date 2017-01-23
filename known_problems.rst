@@ -47,6 +47,12 @@ The following MPD versions cause problems and should be avoided:
 
 __ https://www.musicpd.org/news/2017/01/mpd-0-20-2-released/
 
+.. note::
+
+  If you send the command ``.version`` to your bot and if it uses a known buggy version of MPD then you get a note about that:
+
+      This MPD version (0.x.x) is known to cause problems, please refer to...
+
 Bot starts and crashes and cannot connect to MPD
 ------------------------------------------------
 
