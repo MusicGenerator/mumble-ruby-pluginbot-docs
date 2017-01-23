@@ -26,7 +26,7 @@ But first you need the bot to come into your channel, that is done with::
 
     .ch
 
-which is a command of the :ref:`Control plugin <label_plugins_control>`, see
+which is a command of the :ref:`Control plugin <label_plugins_control>`, see::
 
     .help control
 
