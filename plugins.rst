@@ -20,6 +20,12 @@ For example::
 
   .help youtube
 
+.. note::
+
+    If you are really excited and want to know all the commands of all plugins available then try the command::
+
+        .help all
+
 .. seealso::
 
   See also :ref:`usage-label`.
