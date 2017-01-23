@@ -12,6 +12,13 @@ A good start for learning to control the bot is::
 
     .help
 
+.. note::
+
+  If you are really excited and want to know all the commands available then try the command::
+
+      .help all
+
+
 But first you need the bot to come into your channel, that is done with::
 
     .ch
