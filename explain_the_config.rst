@@ -446,6 +446,8 @@ plugin:bandcamp:youtube_dl:prefixes
 * Type: string
 * Default: ""
 
+.. include:: includes/youtube_dl_prefixes.rst
+
 plugin:bandcamp:to_mp3
 ^^^^^^^^^^^^^^^^^^^^^^
 
@@ -537,6 +539,8 @@ plugin:mixcloud:youtube_dl:prefixes
 
 * Type: string
 * Default: ""
+
+.. include:: includes/youtube_dl_prefixes.rst
 
 plugin:mixcloud:to_mp3
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -644,6 +648,8 @@ plugin:soundcloud:youtube_dl:prefixes
 * Type: string
 * Default: ""
 
+.. include:: includes/youtube_dl_prefixes.rst
+
 plugin:soundcloud:to_mp3
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -690,6 +696,8 @@ plugin:youtube:youtube_dl:prefixes
 
 * Type: string
 * Default: ""
+
+.. include:: includes/youtube_dl_prefixes.rst
 
 plugin:youtube:youtube_dl:maxresults
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
