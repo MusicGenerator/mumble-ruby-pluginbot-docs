@@ -27,7 +27,8 @@ But first you need the bot to come into your channel, that is done with::
     .ch
 
 which is a command of the :ref:`Control plugin <label_plugins_control>`, see
-        .help control
+
+    .help control
 
 The basic music related commands you need for volume control, skip forward/backward, select the title to play, etc. are located in the :ref:`MPD plugin <label_plugins_mpd>`. If you don't want to download new music this is basically all that you need. To get the help of this plugin write to the bot::
 
