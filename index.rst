@@ -14,7 +14,7 @@ You can find the source code on `GitHub`__.
 
 __ https://github.com/MusicGenerator/mumble-ruby-pluginbot
 
-This is the documentation of the current stable version 0.10.2 of the Mumble-Ruby-Pluginbot.
+This is the documentation of the current stable version 0.10.3 of the Mumble-Ruby-Pluginbot.
 
 Contents
 --------
