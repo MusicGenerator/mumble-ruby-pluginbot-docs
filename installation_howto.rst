@@ -163,9 +163,10 @@ Now we need to tell our current shell to use rvm::
 
   source ~/.rvm/scripts/rvm
 
-Because of 'I don't remember' we disable autolibs :P::
+Disable autolibs so that rvm doesn't ask for root - we already installed all the dependencies earlier:
 
   rvm autolibs disable
+  rvm requirements # should print nothing - if this does output something, log in as root and install those
 
 Now we install the latest stable version of Ruby::
 
