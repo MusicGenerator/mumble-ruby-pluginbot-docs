@@ -4,8 +4,9 @@ Compatibility
 =============
 As of 2017-01 the stable release 0.10.x of Mumble-Ruby-Pluginbot was successfully installed and tested on the following distributions with the official :ref:`Installation howto <installationonyourown-label>`:
 
-- Debian 'Wheezy' 7 (oldstable)
-- Debian 'Jessie' 8 (stable)
+- Debian 'Wheezy' 7
+- Debian 'Jessie' 8 (oldstable)
+- Debian 'Sretch' 9 (stable)
 - Ubuntu 14.04 (Trusty) (thanks `@robin`_)
 - Ubuntu 15.10
 - Ubuntu 15.10 Server and Desktop
