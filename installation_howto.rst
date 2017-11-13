@@ -68,6 +68,16 @@ Install the following dependencies as root or via sudo::
   pacman -S libyaml opus zlib openssl git mpd mpc tmux automake \
   autoconf libogg psmisc util-linux libtool curl base-devel wget aria2
 
+On Cent OS 7 only: Install and setup package dependencies
+---------------------------------------------------------
+
+Install the following dependencies as root::
+
+  yum install libyaml opus-tools wget aria2 libyaml-devel git opus-devel \
+  zlib zlib-devel openssl-devel mpd libmpc tmux automake autoconf libtool \
+  libogg-devel gmp-devel dialog unzip bzip2
+
+
 On Debian/Ubuntu based Distributions only: Install and set up system package dependencies
 -----------------------------------------------------------------------------------------
 
@@ -382,6 +392,13 @@ Only on Arch Linux: Install dependencies for youtube-dl
 As root or with sudo install::
 
   pacman -S imagemagick ffmpeg python
+
+Only on Cent OS 7: Install dependencies for youtube-dl
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+As root install::
+
+  yum install ImageMagick python ffmpeg
 
 Only on Debian/Ubuntu based distributions: Install the dependencies (if ffmpeg is available for your distribution)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
