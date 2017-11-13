@@ -68,7 +68,7 @@ Install the following dependencies as root or via sudo::
   pacman -S libyaml opus zlib openssl git mpd mpc tmux automake \
   autoconf libogg psmisc util-linux libtool curl base-devel wget aria2
 
-On Cent OS 7 only: Install and setup package dependencies
+On CentOS 7 only: Install and setup package dependencies
 ---------------------------------------------------------
 
 Install the following dependencies as root::
@@ -393,7 +393,7 @@ As root or with sudo install::
 
   pacman -S imagemagick ffmpeg python
 
-Only on Cent OS 7: Install dependencies for youtube-dl
+Only on CentOS 7: Install dependencies for youtube-dl
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 As root install::

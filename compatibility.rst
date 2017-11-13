@@ -14,6 +14,7 @@ As of 2017-01 the stable release 0.10.x of Mumble-Ruby-Pluginbot was successfull
 - Ubuntu 16.10 Server and Desktop
 - Arch Linux (thanks `@Nascher`_)
 - `Ubuntu based smallest DigitalOcean.com virtual server`_
+- CentOS 7 (TheEight-BitLink)
 
 .. _@robin: https://rbn.gr
 .. _@Nascher: https://nascher.org
