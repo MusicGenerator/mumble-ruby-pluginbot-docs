@@ -373,13 +373,9 @@ Also make the update script executable::
 
 .. note::
 
-  If you created more than one bot in this tutorial open the file and uncomment the needed lines to start your additional mpd instances.
+  If you created more than one bot in this tutorial open the file ~/src/manage.conf and add every additional bot (its number) to the value of BOTS_ENABLED. For example if you created two bots, set the value to "1 2". When you created three bots set it to "1 2 3".
 
-You can see the script `here`__.
-
-__ https://github.com/MusicGenerator/mumble-ruby-pluginbot/blob/master/scripts/manage.sh
-
-Without modification the scripts starts only bot 1, for every additional bot modify the script.
+Without modification the scripts starts only bot 1, for every additional bot modify ~/src/manage.conf.
 
 Install a custom version of youtube-dl
 --------------------------------------
