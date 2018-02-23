@@ -169,7 +169,7 @@ VirtualBox configuration
 - System partition: 5 GB (dynamic size)
 - Home partition: 100 GB (dynamic size, it grows up to that size when you download songs)
 - No swap partition is available.
-- RAM: 512 MiB
+- RAM: 768 MiB (Terminal version), 1GB (GUI version)
 - CPU count: 1
 - Network type: NAT
 - Both partitions are configured as "Solid State Disks" and discard is enabled in the xml configuration file so that the partition size should shrink when you delete files. Thanks @neti for this hint :) This is done once a week in Ubuntu through the `fstrim`_ command.
