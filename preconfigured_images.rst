@@ -50,8 +50,8 @@ Download one of the following compressed images:
 - `pluginbot.arch.img.bananapi.gz`_
 - `pluginbot.arch.img.bananapi.zip`_
 
-.. _pluginbot.arch.img.bananapi.gz: https://www.robingroppe.de/media/?dir=mumble-ruby-pluginbot/0.10/armboards/pluginbot.arch.img.bananapi.gz
-.. _pluginbot.arch.img.bananapi.zip: https://www.robingroppe.de/media/?dir=mumble-ruby-pluginbot/0.10/armboards/pluginbot.arch.img.bananapi.zip
+.. _pluginbot.arch.img.bananapi.gz: https://www.robingroppe.de/media/mumble-ruby-pluginbot/0.10/armboards/pluginbot.arch.img.bananapi.gz
+.. _pluginbot.arch.img.bananapi.zip: https://www.robingroppe.de/media/mumble-ruby-pluginbot/0.10/armboards/pluginbot.arch.img.bananapi.zip
 
 Raspberry Pi2
 ^^^^^^^^^^^^^
@@ -61,8 +61,8 @@ Download one of the following compressed images
 - `pluginbot.arch.img.pi2.gz`_
 - `pluginbot.arch.img.pi2.zip`_
 
-.. _pluginbot.arch.img.pi2.gz: https://www.robingroppe.de/media/?dir=mumble-ruby-pluginbot/0.10/armboards/pluginbot.arch.img.pi2.gz
-.. _pluginbot.arch.img.pi2.zip: https://www.robingroppe.de/media/?dir=mumble-ruby-pluginbot/0.10/armboards/pluginbot.arch.img.pi2.zip
+.. _pluginbot.arch.img.pi2.gz: https://www.robingroppe.de/media/mumble-ruby-pluginbot/0.10/armboards/pluginbot.arch.img.pi2.gz
+.. _pluginbot.arch.img.pi2.zip: https://www.robingroppe.de/media/mumble-ruby-pluginbot/0.10/armboards/pluginbot.arch.img.pi2.zip
 
 Raspberry Pi3
 ^^^^^^^^^^^^^
@@ -72,5 +72,5 @@ Download one of the following compressed images
 - `pluginbot.arch.img.pi3.gz`_
 - `pluginbot.arch.img.pi3.zip`_
 
-.. _pluginbot.arch.img.pi3.gz: https://www.robingroppe.de/media/?dir=mumble-ruby-pluginbot/0.10/armboards/pluginbot.arch.img.pi3.gz
-.. _pluginbot.arch.img.pi3.zip: https://www.robingroppe.de/media/?dir=mumble-ruby-pluginbot/0.10/armboards/pluginbot.arch.img.pi3.zip
+.. _pluginbot.arch.img.pi3.gz: https://www.robingroppe.de/media/mumble-ruby-pluginbot/0.10/armboards/pluginbot.arch.img.pi3.gz
+.. _pluginbot.arch.img.pi3.zip: https://www.robingroppe.de/media/mumble-ruby-pluginbot/0.10/armboards/pluginbot.arch.img.pi3.zip
