@@ -163,7 +163,8 @@ We are using RVM (`Ruby Version Manager`_) to install a local version of Ruby in
 
 First get and add the GPG key of RVM::
 
-  gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+  curl -sSL https://rvm.io/mpapis.asc | /usr/bin/gpg --import -
+  curl -sSL https://rvm.io/pkuczynski.asc | /usr/bin/gpg --import -
 
 We need at least Ruby 1.9.x, here we use the latest stable version::
 
