@@ -1,5 +1,3 @@
 # mumble-ruby-pluginbot-docs
 
-![http://mumble-ruby-pluginbot.rtfd.org/](https://readthedocs.org/projects/mumble-ruby-pluginbot/badge/?version=master)
-
-Read the documentation at http://mumble-ruby-pluginbot.rtfd.org/.
+Read the documentation at https://f.natenom.de/nidx/mrpb/mumble-ruby-pluginbot-readthedocs-io-en-master.pdf.
